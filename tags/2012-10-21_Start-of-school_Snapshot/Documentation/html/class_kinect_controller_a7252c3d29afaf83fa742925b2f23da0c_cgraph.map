@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_base_kinect_controller.html#ad6e79c8e4afab9ba5451079890e31f39" title="Checks to see if the player is ready to operate the robot." alt="" coords="206,5,442,32"/>
+<area shape="rect" id="node5" href="$class_kinect_controller.html#a8f5559d173f04d6e079af3bf5b938bac" title="Returns how far the left hand is." alt="" coords="205,56,443,83"/>
+<area shape="rect" id="node9" href="$class_kinect_controller.html#ab1a5a3007766a1833441a2c94248444a" title="Returns how far the right hand is." alt="" coords="200,107,448,133"/>
+<area shape="rect" id="node12" href="$class_base_kinect_controller.html#aa50bf361285ea614f0f323f930d13b15" title="Halts the robot." alt="" coords="219,157,429,184"/>
+<area shape="rect" id="node14" href="$class_kinect_controller.html#a82c71f65b503923c313980d26f5f1c86" title="Checks to see if the player is shooting." alt="" coords="214,208,434,235"/>
+<area shape="rect" id="node7" href="$namespace_tools.html#a7f4eaf8719ea333f45be6f9cda129692" title="Takes a number between a certain range and scales it within another range." alt="" coords="497,81,599,108"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_base_controller.html" title="A base class meant to be inherited from any controller class." alt="" coords="5,83,112,109"/>
+<area shape="rect" id="node4" href="$class_range_finder.html" title="Uses the rangefinder to find the distance from the wall." alt="" coords="137,83,231,109"/>
+<area shape="rect" id="node6" href="$class_base_component.html" title="A base class meant to be inherited from any component class." alt="" coords="186,5,304,32"/>
+<area shape="rect" id="node8" href="$class_shooter.html" title="Controls the shooter." alt="" coords="256,83,323,109"/>
+</map>

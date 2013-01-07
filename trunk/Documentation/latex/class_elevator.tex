@@ -1,0 +1,152 @@
+\hypertarget{class_elevator}{\section{\-Elevator \-Class \-Reference}
+\label{class_elevator}\index{\-Elevator@{\-Elevator}}
+}
+
+
+\-Transfers the ball from the floor to the top of the elevator.  
+
+
+
+
+{\ttfamily \#include $<$elevator.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Elevator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_elevator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Elevator\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_elevator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_elevator_adc00b0e1820bfefcf7c09015fe8e848c}{\-Elevator} (\-Digital\-Input $\ast$, \-Speed\-Controller $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Creates an instance of this class. \end{DoxyCompactList}\item 
+\hyperlink{class_elevator_a6e2fb71cfcde094c087b8a19a8bcab4b}{$\sim$\-Elevator} ()
+\item 
+bool \hyperlink{class_elevator_a458b763a246ca3d792a204656234c3bb}{\-Is\-Ball\-At\-Bottom} ()
+\item 
+void \hyperlink{class_elevator_a0b5ef4805646fd221e6d048cd7ceecf6}{\-Stop} ()
+\begin{DoxyCompactList}\small\item\em \-Checks to see if there is a ball at the top of the elevator. \end{DoxyCompactList}\item 
+void \hyperlink{class_elevator_a4d1771aa38cdd521b0a49bab5b73fc50}{\-Move\-Up} ()
+\begin{DoxyCompactList}\small\item\em \-Makes the elevator move up. \end{DoxyCompactList}\item 
+void \hyperlink{class_elevator_adca8651a978896e9d6c39b2dbda293b8}{\-Move\-Down} ()
+\begin{DoxyCompactList}\small\item\em \-Makes the elevator move down. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_elevator_af2172b0f50fc8302a990e031613a4550}{m\-Bottom\-Limit\-Switch}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_elevator_a6d56aabc546f914c00a1c21ef72d2864}{m\-Speed\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_elevator_a846507ceb952e28e67d2924d3760a297}{k\-Default\-Speed} = -\/1.\-0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Transfers the ball from the floor to the top of the elevator. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_elevator_adc00b0e1820bfefcf7c09015fe8e848c}{\index{\-Elevator@{\-Elevator}!\-Elevator@{\-Elevator}}
+\index{\-Elevator@{\-Elevator}!Elevator@{\-Elevator}}
+\subsubsection[{\-Elevator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elevator\-::\-Elevator} (
+\begin{DoxyParamCaption}
+\item[{\-Digital\-Input $\ast$}]{bottom\-Limit\-Switch, }
+\item[{\-Speed\-Controller $\ast$}]{speed\-Controller}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_adc00b0e1820bfefcf7c09015fe8e848c}
+
+
+\-Creates an instance of this class. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em bottom\-Limit\-Switch} & \-Pointer to the bottom limit switch. \\
+\hline
+\mbox{\tt in}  & {\em top\-Limit\-Switch} & \-Pointer to the top limit switch. \\
+\hline
+\mbox{\tt in}  & {\em speed\-Controller} & \-Pointer to the elevator speed controller. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_elevator_a6e2fb71cfcde094c087b8a19a8bcab4b}{\index{\-Elevator@{\-Elevator}!$\sim$\-Elevator@{$\sim$\-Elevator}}
+\index{$\sim$\-Elevator@{$\sim$\-Elevator}!Elevator@{\-Elevator}}
+\subsubsection[{$\sim$\-Elevator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elevator\-::$\sim$\-Elevator} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_a6e2fb71cfcde094c087b8a19a8bcab4b}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_elevator_a458b763a246ca3d792a204656234c3bb}{\index{\-Elevator@{\-Elevator}!\-Is\-Ball\-At\-Bottom@{\-Is\-Ball\-At\-Bottom}}
+\index{\-Is\-Ball\-At\-Bottom@{\-Is\-Ball\-At\-Bottom}!Elevator@{\-Elevator}}
+\subsubsection[{\-Is\-Ball\-At\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Elevator\-::\-Is\-Ball\-At\-Bottom} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_a458b763a246ca3d792a204656234c3bb}
+\hypertarget{class_elevator_adca8651a978896e9d6c39b2dbda293b8}{\index{\-Elevator@{\-Elevator}!\-Move\-Down@{\-Move\-Down}}
+\index{\-Move\-Down@{\-Move\-Down}!Elevator@{\-Elevator}}
+\subsubsection[{\-Move\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Elevator\-::\-Move\-Down} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_adca8651a978896e9d6c39b2dbda293b8}
+
+
+\-Makes the elevator move down. 
+
+\hypertarget{class_elevator_a4d1771aa38cdd521b0a49bab5b73fc50}{\index{\-Elevator@{\-Elevator}!\-Move\-Up@{\-Move\-Up}}
+\index{\-Move\-Up@{\-Move\-Up}!Elevator@{\-Elevator}}
+\subsubsection[{\-Move\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Elevator\-::\-Move\-Up} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_a4d1771aa38cdd521b0a49bab5b73fc50}
+
+
+\-Makes the elevator move up. 
+
+\hypertarget{class_elevator_a0b5ef4805646fd221e6d048cd7ceecf6}{\index{\-Elevator@{\-Elevator}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!Elevator@{\-Elevator}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Elevator\-::\-Stop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_a0b5ef4805646fd221e6d048cd7ceecf6}
+
+
+\-Checks to see if there is a ball at the top of the elevator. 
+
+\-Makes the elevator stop. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_elevator_a846507ceb952e28e67d2924d3760a297}{\index{\-Elevator@{\-Elevator}!k\-Default\-Speed@{k\-Default\-Speed}}
+\index{k\-Default\-Speed@{k\-Default\-Speed}!Elevator@{\-Elevator}}
+\subsubsection[{k\-Default\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Elevator\-::k\-Default\-Speed} = -\/1.\-0\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_elevator_a846507ceb952e28e67d2924d3760a297}
+\hypertarget{class_elevator_af2172b0f50fc8302a990e031613a4550}{\index{\-Elevator@{\-Elevator}!m\-Bottom\-Limit\-Switch@{m\-Bottom\-Limit\-Switch}}
+\index{m\-Bottom\-Limit\-Switch@{m\-Bottom\-Limit\-Switch}!Elevator@{\-Elevator}}
+\subsubsection[{m\-Bottom\-Limit\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Elevator\-::m\-Bottom\-Limit\-Switch}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_elevator_af2172b0f50fc8302a990e031613a4550}
+\hypertarget{class_elevator_a6d56aabc546f914c00a1c21ef72d2864}{\index{\-Elevator@{\-Elevator}!m\-Speed\-Controller@{m\-Speed\-Controller}}
+\index{m\-Speed\-Controller@{m\-Speed\-Controller}!Elevator@{\-Elevator}}
+\subsubsection[{m\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Elevator\-::m\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_elevator_a6d56aabc546f914c00a1c21ef72d2864}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{elevator_8h}{elevator.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{elevator_8cpp}{elevator.\-cpp}\end{DoxyCompactItemize}

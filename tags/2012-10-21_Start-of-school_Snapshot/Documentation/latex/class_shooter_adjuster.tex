@@ -1,0 +1,112 @@
+\hypertarget{class_shooter_adjuster}{\section{\-Shooter\-Adjuster \-Class \-Reference}
+\label{class_shooter_adjuster}\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}}
+}
+
+
+\-Adjusts the robot to face the target more accurately.  
+
+
+
+
+{\ttfamily \#include $<$shooter.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Shooter\-Adjuster\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_shooter_adjuster__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Shooter\-Adjuster\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_shooter_adjuster__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shooter_adjuster_aec63818b4b79db7e2baf7b40ffd8c7f9}{\-Shooter\-Adjuster} (\hyperlink{class_shooter}{\-Shooter} $\ast$, \-Gyro $\ast$, \hyperlink{class_target_finder}{\-Target\-Finder} $\ast$, \-Watchdog \&)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_target_utils_1_1_target}{\-Target\-Utils\-::\-Target} \hyperlink{class_shooter_adjuster_acecdbf763e867021b9b7b39e387609fd}{\-Obtain\-Highest\-Target} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shooter}{\-Shooter} $\ast$ \hyperlink{class_shooter_adjuster_a4e7a220158bd064180b2b1aa9d1ac614}{m\-Shooter}
+\item 
+\-Gyro $\ast$ \hyperlink{class_shooter_adjuster_ad0c5d105a2c182e2e502e8ef8e9452e9}{m\-Gyro}
+\item 
+\hyperlink{class_target_finder}{\-Target\-Finder} $\ast$ \hyperlink{class_shooter_adjuster_aada6daf6f361af84d6ccb6a416215866}{m\-Target\-Finder}
+\item 
+\-Watchdog \& \hyperlink{class_shooter_adjuster_a8d4e4deae719e94880c7828f8baed77c}{m\-Watchdog}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_shooter_adjuster_a2c3cb7c557b0db61576a5948227b8c42}{k\-Rotation\-Speed} = 0.\-4
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Adjusts the robot to face the target more accurately. 
+
+\-This will take command over the drive system temporarily, and will disable or feed the watchdog during the duration.
+
+\begin{DoxyWarning}{\-Warning}
+\-Using this class will pause the robot for approximately 0.\-5 seconds to obtain the image, then a few more seconds to move the robot into the correct position. 
+\end{DoxyWarning}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_shooter_adjuster_aec63818b4b79db7e2baf7b40ffd8c7f9}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!\-Shooter\-Adjuster@{\-Shooter\-Adjuster}}
+\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{\-Shooter\-Adjuster}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Shooter\-Adjuster\-::\-Shooter\-Adjuster} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Shooter} $\ast$}]{, }
+\item[{\-Gyro $\ast$}]{, }
+\item[{{\bf \-Target\-Finder} $\ast$}]{, }
+\item[{\-Watchdog \&}]{}
+\end{DoxyParamCaption}
+)}}\label{class_shooter_adjuster_aec63818b4b79db7e2baf7b40ffd8c7f9}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_shooter_adjuster_acecdbf763e867021b9b7b39e387609fd}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!\-Obtain\-Highest\-Target@{\-Obtain\-Highest\-Target}}
+\index{\-Obtain\-Highest\-Target@{\-Obtain\-Highest\-Target}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{\-Obtain\-Highest\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Target\-Utils\-::\-Target} {\bf \-Shooter\-Adjuster\-::\-Obtain\-Highest\-Target} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_adjuster_acecdbf763e867021b9b7b39e387609fd}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_shooter_adjuster_a2c3cb7c557b0db61576a5948227b8c42}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!k\-Rotation\-Speed@{k\-Rotation\-Speed}}
+\index{k\-Rotation\-Speed@{k\-Rotation\-Speed}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{k\-Rotation\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Shooter\-Adjuster\-::k\-Rotation\-Speed} = 0.\-4\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_shooter_adjuster_a2c3cb7c557b0db61576a5948227b8c42}
+\hypertarget{class_shooter_adjuster_ad0c5d105a2c182e2e502e8ef8e9452e9}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!m\-Gyro@{m\-Gyro}}
+\index{m\-Gyro@{m\-Gyro}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{m\-Gyro}]{\setlength{\rightskip}{0pt plus 5cm}\-Gyro$\ast$ {\bf \-Shooter\-Adjuster\-::m\-Gyro}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_adjuster_ad0c5d105a2c182e2e502e8ef8e9452e9}
+\hypertarget{class_shooter_adjuster_a4e7a220158bd064180b2b1aa9d1ac614}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!m\-Shooter@{m\-Shooter}}
+\index{m\-Shooter@{m\-Shooter}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{m\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Shooter}$\ast$ {\bf \-Shooter\-Adjuster\-::m\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_adjuster_a4e7a220158bd064180b2b1aa9d1ac614}
+\hypertarget{class_shooter_adjuster_aada6daf6f361af84d6ccb6a416215866}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!m\-Target\-Finder@{m\-Target\-Finder}}
+\index{m\-Target\-Finder@{m\-Target\-Finder}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{m\-Target\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Target\-Finder}$\ast$ {\bf \-Shooter\-Adjuster\-::m\-Target\-Finder}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_adjuster_aada6daf6f361af84d6ccb6a416215866}
+\hypertarget{class_shooter_adjuster_a8d4e4deae719e94880c7828f8baed77c}{\index{\-Shooter\-Adjuster@{\-Shooter\-Adjuster}!m\-Watchdog@{m\-Watchdog}}
+\index{m\-Watchdog@{m\-Watchdog}!ShooterAdjuster@{\-Shooter\-Adjuster}}
+\subsubsection[{m\-Watchdog}]{\setlength{\rightskip}{0pt plus 5cm}\-Watchdog\& {\bf \-Shooter\-Adjuster\-::m\-Watchdog}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_adjuster_a8d4e4deae719e94880c7828f8baed77c}
+
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{shooter_8h}{shooter.\-h}\end{DoxyCompactItemize}

@@ -1,0 +1,163 @@
+\hypertarget{class_calibrated_shooter_controller}{\section{\-Calibrated\-Shooter\-Controller \-Class \-Reference}
+\label{class_calibrated_shooter_controller}\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}}
+}
+
+
+\-Allows you to adjust and test the precise speeds of the shooter via \-Smart\-Dashboard.  
+
+
+
+
+{\ttfamily \#include $<$shooter.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Calibrated\-Shooter\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{class_calibrated_shooter_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Calibrated\-Shooter\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{class_calibrated_shooter_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_calibrated_shooter_controller_abb110a11bd9c361c7e039f76f3be24e0}{\-Calibrated\-Shooter\-Controller} (\hyperlink{class_shooter}{\-Shooter} $\ast$, \-Joystick $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Constructor for \-Calibrated\-Shooter. \end{DoxyCompactList}\item 
+void \hyperlink{class_calibrated_shooter_controller_a9910e6771c5592b80ca567f25e767f66}{\-Run} ()
+\begin{DoxyCompactList}\small\item\em \-Runs the code to actually power the shooter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_calibrated_shooter_controller_ab7799ac7013ba36a2a1d90c6e7c57564}{\-Update\-Presets} ()
+\begin{DoxyCompactList}\small\item\em \-Updates the speeds of the top and bottom speeds based on the values found in the \-Smart\-Dashboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shooter}{\-Shooter} $\ast$ \hyperlink{class_calibrated_shooter_controller_a120eb4562c3206cdb49600212b4a548b}{m\-Shooter}
+\item 
+\-Joystick $\ast$ \hyperlink{class_calibrated_shooter_controller_a037955915eb9d5f6db43d011285d68a4}{m\-Joystick}
+\item 
+float \hyperlink{class_calibrated_shooter_controller_af53b6f35b4f23b156b1213f9c415adff}{m\-Top\-Speed}
+\item 
+float \hyperlink{class_calibrated_shooter_controller_a58a13a82b2f5c9c9273938ef096d152e}{m\-Bottom\-Speed}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Allows you to adjust and test the precise speeds of the shooter via \-Smart\-Dashboard. 
+
+\-This lets you precisely calibrate the speed of the motors via the \-Smart\-Dashboard, then shoot it by using a joystick. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_calibrated_shooter_controller_abb110a11bd9c361c7e039f76f3be24e0}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}}
+\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{\-Calibrated\-Shooter\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calibrated\-Shooter\-Controller\-::\-Calibrated\-Shooter\-Controller} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Shooter} $\ast$}]{shooter, }
+\item[{\-Joystick $\ast$}]{joystick}
+\end{DoxyParamCaption}
+)}}\label{class_calibrated_shooter_controller_abb110a11bd9c361c7e039f76f3be24e0}
+
+
+\-Constructor for \-Calibrated\-Shooter. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em shooter} & \-Pointer to the shooter \\
+\hline
+\mbox{\tt in}  & {\em joystick} & \-Pointer to a joystick \\
+\hline
+\end{DoxyParams}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calibrated_shooter_controller_abb110a11bd9c361c7e039f76f3be24e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_calibrated_shooter_controller_a9910e6771c5592b80ca567f25e767f66}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calibrated\-Shooter\-Controller\-::\-Run} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_calibrated_shooter_controller_a9910e6771c5592b80ca567f25e767f66}
+
+
+\-Runs the code to actually power the shooter. 
+
+\-Use the trigger to run the shooter. 
+
+\-Implements \hyperlink{class_base_controller_a2c73f08fa403e1a4912ce4aaa348ac61}{\-Base\-Controller}.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calibrated_shooter_controller_a9910e6771c5592b80ca567f25e767f66_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calibrated_shooter_controller_ab7799ac7013ba36a2a1d90c6e7c57564}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!\-Update\-Presets@{\-Update\-Presets}}
+\index{\-Update\-Presets@{\-Update\-Presets}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{\-Update\-Presets}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calibrated\-Shooter\-Controller\-::\-Update\-Presets} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calibrated_shooter_controller_ab7799ac7013ba36a2a1d90c6e7c57564}
+
+
+\-Updates the speeds of the top and bottom speeds based on the values found in the \-Smart\-Dashboard. 
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calibrated_shooter_controller_ab7799ac7013ba36a2a1d90c6e7c57564_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_calibrated_shooter_controller_a58a13a82b2f5c9c9273938ef096d152e}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!m\-Bottom\-Speed@{m\-Bottom\-Speed}}
+\index{m\-Bottom\-Speed@{m\-Bottom\-Speed}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{m\-Bottom\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Calibrated\-Shooter\-Controller\-::m\-Bottom\-Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calibrated_shooter_controller_a58a13a82b2f5c9c9273938ef096d152e}
+\hypertarget{class_calibrated_shooter_controller_a037955915eb9d5f6db43d011285d68a4}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!m\-Joystick@{m\-Joystick}}
+\index{m\-Joystick@{m\-Joystick}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{m\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Calibrated\-Shooter\-Controller\-::m\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calibrated_shooter_controller_a037955915eb9d5f6db43d011285d68a4}
+\hypertarget{class_calibrated_shooter_controller_a120eb4562c3206cdb49600212b4a548b}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!m\-Shooter@{m\-Shooter}}
+\index{m\-Shooter@{m\-Shooter}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{m\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Shooter}$\ast$ {\bf \-Calibrated\-Shooter\-Controller\-::m\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calibrated_shooter_controller_a120eb4562c3206cdb49600212b4a548b}
+\hypertarget{class_calibrated_shooter_controller_af53b6f35b4f23b156b1213f9c415adff}{\index{\-Calibrated\-Shooter\-Controller@{\-Calibrated\-Shooter\-Controller}!m\-Top\-Speed@{m\-Top\-Speed}}
+\index{m\-Top\-Speed@{m\-Top\-Speed}!CalibratedShooterController@{\-Calibrated\-Shooter\-Controller}}
+\subsubsection[{m\-Top\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Calibrated\-Shooter\-Controller\-::m\-Top\-Speed}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calibrated_shooter_controller_af53b6f35b4f23b156b1213f9c415adff}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{shooter_8h}{shooter.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{shooter_8cpp}{shooter.\-cpp}\end{DoxyCompactItemize}

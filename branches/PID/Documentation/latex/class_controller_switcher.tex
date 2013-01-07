@@ -1,0 +1,128 @@
+\hypertarget{class_controller_switcher}{\section{\-Controller\-Switcher \-Class \-Reference}
+\label{class_controller_switcher}\index{\-Controller\-Switcher@{\-Controller\-Switcher}}
+}
+
+
+\-A container class to hold a series of controllers to allow a user to switch between them via the smart dashboard.  
+
+
+
+
+{\ttfamily \#include $<$driving.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Controller\-Switcher\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_controller_switcher__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Controller\-Switcher\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{class_controller_switcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controller_switcher_ac78e49b77d1b1b9c7822fb1c0056802f}{\-Controller\-Switcher} (vector$<$ \hyperlink{class_base_controller}{\-Base\-Controller} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em \-Initializes the object. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_controller_switcher_ad3dec9447553ace17816616fd6c3391b}{$\sim$\-Controller\-Switcher} ()
+\begin{DoxyCompactList}\small\item\em \-The destructor for this object. \end{DoxyCompactList}\item 
+void \hyperlink{class_controller_switcher_a5ddbffba9ab01afe511927a3e37e0a35}{\-Run} ()
+\begin{DoxyCompactList}\small\item\em \-Runs the switcher. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{class_base_controller}{\-Base\-Controller} $\ast$ $>$ \hyperlink{class_controller_switcher_a14fc6d608b0d3b913ba4d4cac3b67f5c}{m\-Controllers}
+\item 
+int \hyperlink{class_controller_switcher_a1164e2c738ef79e459880bdb66e2f7f9}{m\-Controller\-Size}
+\item 
+const char $\ast$ \hyperlink{class_controller_switcher_a9c56a431ba8c92a669972199e072306a}{m\-Label}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A container class to hold a series of controllers to allow a user to switch between them via the smart dashboard. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_controller_switcher_ac78e49b77d1b1b9c7822fb1c0056802f}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!\-Controller\-Switcher@{\-Controller\-Switcher}}
+\index{\-Controller\-Switcher@{\-Controller\-Switcher}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{\-Controller\-Switcher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Controller\-Switcher\-::\-Controller\-Switcher} (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf \-Base\-Controller} $\ast$ $>$}]{controllers}
+\end{DoxyParamCaption}
+)}}\label{class_controller_switcher_ac78e49b77d1b1b9c7822fb1c0056802f}
+
+
+\-Initializes the object. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em controllers} & \-A vector containing pointers to all the controllers you want to switch between. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_controller_switcher_ad3dec9447553ace17816616fd6c3391b}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!$\sim$\-Controller\-Switcher@{$\sim$\-Controller\-Switcher}}
+\index{$\sim$\-Controller\-Switcher@{$\sim$\-Controller\-Switcher}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{$\sim$\-Controller\-Switcher}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Controller\-Switcher\-::$\sim$\-Controller\-Switcher} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_controller_switcher_ad3dec9447553ace17816616fd6c3391b}
+
+
+\-The destructor for this object. 
+
+\-Currently does nothing. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_controller_switcher_a5ddbffba9ab01afe511927a3e37e0a35}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Controller\-Switcher\-::\-Run} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_controller_switcher_a5ddbffba9ab01afe511927a3e37e0a35}
+
+
+\-Runs the switcher. 
+
+\-Call this function repeatedly inside \hyperlink{class_main_robot_ad14b66387dd3e434ae7234508ba898ea}{\-Main\-Robot\-::\-Operator\-Control()}. \-This interfaces with the \-Smart\-Dashboard to run the controller. 
+
+\-Implements \hyperlink{class_base_controller_a2c73f08fa403e1a4912ce4aaa348ac61}{\-Base\-Controller}.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_controller_switcher_a5ddbffba9ab01afe511927a3e37e0a35_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_controller_switcher_a14fc6d608b0d3b913ba4d4cac3b67f5c}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!m\-Controllers@{m\-Controllers}}
+\index{m\-Controllers@{m\-Controllers}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{m\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf \-Base\-Controller}$\ast$$>$ {\bf \-Controller\-Switcher\-::m\-Controllers}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_controller_switcher_a14fc6d608b0d3b913ba4d4cac3b67f5c}
+\hypertarget{class_controller_switcher_a1164e2c738ef79e459880bdb66e2f7f9}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!m\-Controller\-Size@{m\-Controller\-Size}}
+\index{m\-Controller\-Size@{m\-Controller\-Size}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{m\-Controller\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Controller\-Switcher\-::m\-Controller\-Size}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_controller_switcher_a1164e2c738ef79e459880bdb66e2f7f9}
+\hypertarget{class_controller_switcher_a9c56a431ba8c92a669972199e072306a}{\index{\-Controller\-Switcher@{\-Controller\-Switcher}!m\-Label@{m\-Label}}
+\index{m\-Label@{m\-Label}!ControllerSwitcher@{\-Controller\-Switcher}}
+\subsubsection[{m\-Label}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf \-Controller\-Switcher\-::m\-Label}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_controller_switcher_a9c56a431ba8c92a669972199e072306a}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{driving_8h}{driving.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{driving_8cpp}{driving.\-cpp}\end{DoxyCompactItemize}

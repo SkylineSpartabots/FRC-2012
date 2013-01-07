@@ -1,0 +1,103 @@
+\hypertarget{class_arcade_joystick}{\section{\-Arcade\-Joystick \-Class \-Reference}
+\label{class_arcade_joystick}\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}}
+}
+
+
+{\ttfamily \#include $<$driving.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Arcade\-Joystick\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_arcade_joystick__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Arcade\-Joystick\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_arcade_joystick__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_arcade_joystick_a6f664f5c773ae81361e54764f4a989b3}{\-Arcade\-Joystick} (\-Robot\-Drive $\ast$, \-Joystick $\ast$)
+\item 
+void \hyperlink{class_arcade_joystick_a58b33ec57356a99245409e9f4c2e7fdd}{\-Run} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{class_arcade_joystick_a70583063f7036e5a19697a343573cac0}{\-Get\-Left\-And\-Right} (float, float)
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Robot\-Drive $\ast$ \hyperlink{class_arcade_joystick_af88f7169dc340f865088eac75c97a8f9}{m\-Robot\-Drive}
+\item 
+\-Joystick $\ast$ \hyperlink{class_arcade_joystick_a9be7e5f362c84be3e219e1528b85ff07}{m\-Joystick}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_arcade_joystick_a6f664f5c773ae81361e54764f4a989b3}{\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!\-Arcade\-Joystick@{\-Arcade\-Joystick}}
+\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!ArcadeJoystick@{\-Arcade\-Joystick}}
+\subsubsection[{\-Arcade\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Arcade\-Joystick\-::\-Arcade\-Joystick} (
+\begin{DoxyParamCaption}
+\item[{\-Robot\-Drive $\ast$}]{robot\-Drive, }
+\item[{\-Joystick $\ast$}]{joystick}
+\end{DoxyParamCaption}
+)}}\label{class_arcade_joystick_a6f664f5c773ae81361e54764f4a989b3}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_arcade_joystick_a70583063f7036e5a19697a343573cac0}{\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!\-Get\-Left\-And\-Right@{\-Get\-Left\-And\-Right}}
+\index{\-Get\-Left\-And\-Right@{\-Get\-Left\-And\-Right}!ArcadeJoystick@{\-Arcade\-Joystick}}
+\subsubsection[{\-Get\-Left\-And\-Right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Arcade\-Joystick\-::\-Get\-Left\-And\-Right} (
+\begin{DoxyParamCaption}
+\item[{float}]{move\-Value, }
+\item[{float}]{rotate\-Value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_arcade_joystick_a70583063f7036e5a19697a343573cac0}
+\-This is copied directly from \-F\-I\-R\-S\-T's source code for \-Arcade\-Drive. \hypertarget{class_arcade_joystick_a58b33ec57356a99245409e9f4c2e7fdd}{\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!ArcadeJoystick@{\-Arcade\-Joystick}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Arcade\-Joystick\-::\-Run} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_arcade_joystick_a58b33ec57356a99245409e9f4c2e7fdd}
+\-Deliberately not using '\-Robot\-Drive\-::\-Arcade\-Drive' so we can get the ultimate left and right values. 
+
+\-Implements \hyperlink{class_base_joystick_controller_a8da5328dc760aa08edade5adb793d0c4}{\-Base\-Joystick\-Controller}.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_arcade_joystick_a58b33ec57356a99245409e9f4c2e7fdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_arcade_joystick_a9be7e5f362c84be3e219e1528b85ff07}{\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!m\-Joystick@{m\-Joystick}}
+\index{m\-Joystick@{m\-Joystick}!ArcadeJoystick@{\-Arcade\-Joystick}}
+\subsubsection[{m\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Arcade\-Joystick\-::m\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_arcade_joystick_a9be7e5f362c84be3e219e1528b85ff07}
+\hypertarget{class_arcade_joystick_af88f7169dc340f865088eac75c97a8f9}{\index{\-Arcade\-Joystick@{\-Arcade\-Joystick}!m\-Robot\-Drive@{m\-Robot\-Drive}}
+\index{m\-Robot\-Drive@{m\-Robot\-Drive}!ArcadeJoystick@{\-Arcade\-Joystick}}
+\subsubsection[{m\-Robot\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Robot\-Drive$\ast$ {\bf \-Arcade\-Joystick\-::m\-Robot\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_arcade_joystick_af88f7169dc340f865088eac75c97a8f9}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{driving_8h}{driving.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{driving_8cpp}{driving.\-cpp}\end{DoxyCompactItemize}

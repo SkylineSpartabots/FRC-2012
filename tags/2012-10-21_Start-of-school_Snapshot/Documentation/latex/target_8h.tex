@@ -1,0 +1,59 @@
+\hypertarget{target_8h}{\section{\-Code/\-Tracking/target.h \-File \-Reference}
+\label{target_8h}\index{\-Code/\-Tracking/target.\-h@{\-Code/\-Tracking/target.\-h}}
+}
+
+
+\-Classes all about using the camera, analyzing images, and sending data back to the computer.  
+
+
+{\ttfamily \#include $<$utility$>$}\*
+{\ttfamily \#include $<$math.\-h$>$}\*
+{\ttfamily \#include $<$algorithm$>$}\*
+{\ttfamily \#include \char`\"{}\-W\-P\-I\-Lib.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}nivision.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Vision/\-H\-S\-L\-Image.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}\-Vision/\-Mono\-Image.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Definitions/components.\-h\char`\"{}}\*
+\-Include dependency graph for target.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{target_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{target_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_target_utils_1_1_coordinate}{\-Target\-Utils\-::\-Coordinate}
+\begin{DoxyCompactList}\small\item\em \-Used to represent one cartesian coordinate. \end{DoxyCompactList}\item 
+struct \hyperlink{struct_target_utils_1_1_target}{\-Target\-Utils\-::\-Target}
+\begin{DoxyCompactList}\small\item\em \-A collection of data symbolizing one target. \end{DoxyCompactList}\item 
+class \hyperlink{class_target_utils_1_1_sane_binary_image}{\-Target\-Utils\-::\-Sane\-Binary\-Image}
+\begin{DoxyCompactList}\small\item\em \-A subclass of \-Binary\-Image (provided by \-W\-P\-I\-Lib) that provides the ability to detect rectangles. \end{DoxyCompactList}\item 
+class \hyperlink{class_target_finder}{\-Target\-Finder}
+\item 
+class \hyperlink{class_target_snapshot_controller}{\-Target\-Snapshot\-Controller}
+\begin{DoxyCompactList}\small\item\em \-This class is responsible for taking a picture snapshot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \hyperlink{namespace_target_utils}{\-Target\-Utils}
+\begin{DoxyCompactList}\small\item\em \-A collection of structs and classes meant specifically for the target detection code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \-Threshold \hyperlink{namespace_target_utils_a947bbb5e94ef4920376ed9e3ba7349c6}{\-Target\-Utils\-::threshold}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Classes all about using the camera, analyzing images, and sending data back to the computer. \begin{DoxyWarning}{\-Warning}
+\-In progress, do not use. 
+\end{DoxyWarning}

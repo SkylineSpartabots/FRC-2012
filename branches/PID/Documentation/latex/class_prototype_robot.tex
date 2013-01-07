@@ -1,0 +1,308 @@
+\hypertarget{class_prototype_robot}{\section{\-Prototype\-Robot \-Class \-Reference}
+\label{class_prototype_robot}\index{\-Prototype\-Robot@{\-Prototype\-Robot}}
+}
+
+
+\-This class bundles together everything to ultimately run and control the robot.  
+
+
+
+
+{\ttfamily \#include $<$\-Prototype\-Robot.\-h$>$}
+
+
+
+\-Collaboration diagram for \-Prototype\-Robot\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_prototype_robot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_prototype_robot_ae07d64e3122e204dce1ea3085a09db23}{\-Prototype\-Robot} ()
+\item 
+\hyperlink{class_prototype_robot_a3164697dc4ba8598f02196cd2d0781a2}{$\sim$\-Prototype\-Robot} ()
+\begin{DoxyCompactList}\small\item\em \-Destroys all hardware, input devices, and software created for the entire robot. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_a284537e39942c05f2ab2ded095235564}{\-Robot\-Init} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes all hardware, input devices, and software for the entire robot. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_aa9435e95526e228db834f6cbec379d5d}{\-Autonomous} ()
+\begin{DoxyCompactList}\small\item\em \-The code to be run during \-Autonomous mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_a0f748c5f16855cd872120c20d807c968}{\-Operator\-Control} ()
+\begin{DoxyCompactList}\small\item\em \-The code to be run during \-Teleoperated mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_prototype_robot_a589a866ea797e4bf9d135e9ef28d22d5}{\-Initialize\-Hardware} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any code provided by \-W\-P\-I\-Lib meant to interface directly with specific hardware components. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_a185aff067e319ee33d34e09564748f32}{\-Initialize\-Input\-Devices} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any hardware used by the laptop to send data over to the robot (joysticks, etc). \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_a272a6776690860c918d6660552ef29cb}{\-Initialize\-Components} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any software components that bundles together hardware needed to provide additional functionality. \end{DoxyCompactList}\item 
+void \hyperlink{class_prototype_robot_af9b3adcf77f9f6781447db830501f42c}{\-Initialize\-Controllers} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any software that takes in user input to manipulate hardware or software, or needs to be called periodically during operator control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Robot\-Drive $\ast$ \hyperlink{class_prototype_robot_a59ebd43c14b20ccc1d8bbdd36903ae6a}{m\-Robot\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_prototype_robot_aa528a979ca0417689b689a5b8de5760c}{m\-Left\-Front\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_prototype_robot_acf1e651f477389c17bd0c78a0f80237b}{m\-Left\-Back\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_prototype_robot_a00cbde5b429dca9a0f2d1493b4a5b0b7}{m\-Right\-Front\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_prototype_robot_a07872d55928f02046bbca01674ae1192}{m\-Right\-Back\-Drive}
+\item 
+\-Compressor $\ast$ \hyperlink{class_prototype_robot_a5478de9598e5f16cc8f74f60cf854152}{m\-Compressor}
+\item 
+\-Solenoid $\ast$ \hyperlink{class_prototype_robot_a796da143a2bb4f066d02a917e07b51cb}{m\-Solenoid1}
+\item 
+\-Solenoid $\ast$ \hyperlink{class_prototype_robot_a09a513e0fc667b2b63156caece8dcab0}{m\-Solenoid2}
+\item 
+\-Servo $\ast$ \hyperlink{class_prototype_robot_aa4594d0971bd4533ff0eb4e03a691819}{m\-Servo}
+\item 
+\-Joystick $\ast$ \hyperlink{class_prototype_robot_a4b1666c78ec45587e5468a9e37fea463}{m\-Left\-Joystick}
+\item 
+\-Joystick $\ast$ \hyperlink{class_prototype_robot_adba5da50eb59a9a4bf87cd91523b3b38}{m\-Right\-Joystick}
+\item 
+\-Joystick $\ast$ \hyperlink{class_prototype_robot_a34901bc0b6099bf65cb29ab819487a4b}{m\-Twist\-Joystick}
+\item 
+\-Kinect $\ast$ \hyperlink{class_prototype_robot_adaab5819787642c2204e6f26f84c1871}{m\-Kinect}
+\item 
+\-Kinect\-Stick $\ast$ \hyperlink{class_prototype_robot_a50e2be321cba606ee93ae8aca7cf513c}{m\-Left\-Kinect\-Stick}
+\item 
+\-Kinect\-Stick $\ast$ \hyperlink{class_prototype_robot_aee80524be604111679af71811c1dcb79}{m\-Right\-Kinect\-Stick}
+\item 
+\hyperlink{class_base_motor_arm_component}{\-Base\-Motor\-Arm\-Component} $\ast$ \hyperlink{class_prototype_robot_a36d9223bd2fe9e9b657f6752ec2fbe94}{m\-Arm}
+\item 
+\hyperlink{class_pneumatic_arm}{\-Pneumatic\-Arm} $\ast$ \hyperlink{class_prototype_robot_a7faff555689ab1768c5bd8b2f78fe029}{m\-Pneumatic\-Arm}
+\item 
+vector$<$ \hyperlink{class_base_controller}{\-Base\-Controller} $\ast$ $>$ \hyperlink{class_prototype_robot_a0ea7c8c7d32f9a237bd0dbb559c27dc2}{m\-Controller\-Collection}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{class_prototype_robot_a45c884944b8e6e8721b323b65414449a}{k\-Motor\-Wait} = 0.\-01
+\item 
+static const double \hyperlink{class_prototype_robot_a2f15dd7940c8ac7584e76669cbf25b72}{k\-Watchdog\-Expiration} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class bundles together everything to ultimately run and control the robot. 
+
+\-When the robot starts, a single instance of this class is created by a macro (provided by \-W\-P\-I\-Lib). \-This class must provide several methods in order to be fully functional\-:
+\begin{DoxyItemize}
+\item \hyperlink{class_prototype_robot_aa9435e95526e228db834f6cbec379d5d}{\-Autonomous()}
+\item \hyperlink{class_prototype_robot_a0f748c5f16855cd872120c20d807c968}{\-Operator\-Control()}
+\end{DoxyItemize}
+
+\-It may also provide additional methods provided by \-W\-P\-I\-Lib and \-Simple\-Robot.
+
+\-This class is the only one that is allowed to create instances of any \-W\-P\-I\-Lib classes, \-Components, and \-Controllers (to prevent accidental memory leaks with pointers). \-However, any class is allowed to create instances of normal classes. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_prototype_robot_ae07d64e3122e204dce1ea3085a09db23}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Prototype\-Robot@{\-Prototype\-Robot}}
+\index{\-Prototype\-Robot@{\-Prototype\-Robot}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Prototype\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Prototype\-Robot\-::\-Prototype\-Robot} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_prototype_robot_ae07d64e3122e204dce1ea3085a09db23}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prototype_robot_ae07d64e3122e204dce1ea3085a09db23_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_prototype_robot_a3164697dc4ba8598f02196cd2d0781a2}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!$\sim$\-Prototype\-Robot@{$\sim$\-Prototype\-Robot}}
+\index{$\sim$\-Prototype\-Robot@{$\sim$\-Prototype\-Robot}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{$\sim$\-Prototype\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Prototype\-Robot\-::$\sim$\-Prototype\-Robot} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_prototype_robot_a3164697dc4ba8598f02196cd2d0781a2}
+
+
+\-Destroys all hardware, input devices, and software created for the entire robot. 
+
+\begin{DoxyWarning}{\-Warning}
+\-This is frequently out-\/of-\/date. 
+\end{DoxyWarning}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_prototype_robot_aa9435e95526e228db834f6cbec379d5d}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Autonomous@{\-Autonomous}}
+\index{\-Autonomous@{\-Autonomous}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Autonomous}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Autonomous} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_prototype_robot_aa9435e95526e228db834f6cbec379d5d}
+
+
+\-The code to be run during \-Autonomous mode. 
+
+\-This is a mandatory function required for the robot to function. \-When the '\-Autonomous' toggle is selected and enabled on the \-F\-R\-C \-Dashboard, this function will run.
+
+\-It is meant to be run once, at the start of the match, during \-Hybrid mode, for 15 seconds.
+
+\begin{DoxyRefDesc}{\-Todo}
+\item[\hyperlink{todo__todo000002}{\-Todo}]\-Currently waits until \-Autonomous is disabled. \end{DoxyRefDesc}
+\hypertarget{class_prototype_robot_a272a6776690860c918d6660552ef29cb}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Initialize\-Components@{\-Initialize\-Components}}
+\index{\-Initialize\-Components@{\-Initialize\-Components}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Initialize\-Components}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Initialize\-Components} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a272a6776690860c918d6660552ef29cb}
+
+
+\-Initializes any software components that bundles together hardware needed to provide additional functionality. 
+
+\-For example, code to run the shooter would be initialized here because it uses several \-Jaguars and a \-Joystick to function.
+
+\-Ideally, each class instantiated should have \hyperlink{class_base_component}{\-Base\-Component} as a parent class. \hypertarget{class_prototype_robot_af9b3adcf77f9f6781447db830501f42c}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Initialize\-Controllers@{\-Initialize\-Controllers}}
+\index{\-Initialize\-Controllers@{\-Initialize\-Controllers}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Initialize\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Initialize\-Controllers} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_af9b3adcf77f9f6781447db830501f42c}
+
+
+\-Initializes any software that takes in user input to manipulate hardware or software, or needs to be called periodically during operator control. 
+
+\-Each object initialized in this file must inherit \hyperlink{class_base_controller}{\-Base\-Controller}. \-They are assigned to the heap, and appended to the end of \hyperlink{class_prototype_robot_a0ea7c8c7d32f9a237bd0dbb559c27dc2}{\-Prototype\-Robot\-::m\-Controller\-Collection}, \hypertarget{class_prototype_robot_a589a866ea797e4bf9d135e9ef28d22d5}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Initialize\-Hardware@{\-Initialize\-Hardware}}
+\index{\-Initialize\-Hardware@{\-Initialize\-Hardware}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Initialize\-Hardware}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Initialize\-Hardware} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a589a866ea797e4bf9d135e9ef28d22d5}
+
+
+\-Initializes any code provided by \-W\-P\-I\-Lib meant to interface directly with specific hardware components. 
+
+\-Currently initializes the
+\begin{DoxyItemize}
+\item \-Robot drive
+\item \-Jaguars for the shooter
+\item \-Ultrasound sensor
+\item \-Gyro 
+\end{DoxyItemize}\hypertarget{class_prototype_robot_a185aff067e319ee33d34e09564748f32}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Initialize\-Input\-Devices@{\-Initialize\-Input\-Devices}}
+\index{\-Initialize\-Input\-Devices@{\-Initialize\-Input\-Devices}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Initialize\-Input\-Devices}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Initialize\-Input\-Devices} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a185aff067e319ee33d34e09564748f32}
+
+
+\-Initializes any hardware used by the laptop to send data over to the robot (joysticks, etc). 
+
+\-Currently initializes the
+\begin{DoxyItemize}
+\item \-Joysticks
+\item \-Kinect 
+\end{DoxyItemize}\hypertarget{class_prototype_robot_a0f748c5f16855cd872120c20d807c968}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Operator\-Control@{\-Operator\-Control}}
+\index{\-Operator\-Control@{\-Operator\-Control}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Operator\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Operator\-Control} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_prototype_robot_a0f748c5f16855cd872120c20d807c968}
+
+
+\-The code to be run during \-Teleoperated mode. 
+
+\-This is a mandatory function required for the robot to function. \-When the '\-Teleoperated' toggle is selected and enabled on the \-F\-R\-C \-Dashboard, this function will run.
+
+\-This method will repeatedly call the '\-Run' methods of any class (that inherited \hyperlink{class_base_controller}{\-Base\-Controller}) that has been added to m\-Controller\-Collection. \hypertarget{class_prototype_robot_a284537e39942c05f2ab2ded095235564}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!\-Robot\-Init@{\-Robot\-Init}}
+\index{\-Robot\-Init@{\-Robot\-Init}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{\-Robot\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Prototype\-Robot\-::\-Robot\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_prototype_robot_a284537e39942c05f2ab2ded095235564}
+
+
+\-Initializes all hardware, input devices, and software for the entire robot. 
+
+\-This class will also enable the watchdog. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_prototype_robot_a45c884944b8e6e8721b323b65414449a}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!k\-Motor\-Wait@{k\-Motor\-Wait}}
+\index{k\-Motor\-Wait@{k\-Motor\-Wait}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{k\-Motor\-Wait}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf \-Prototype\-Robot\-::k\-Motor\-Wait} = 0.\-01\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_prototype_robot_a45c884944b8e6e8721b323b65414449a}
+\hypertarget{class_prototype_robot_a2f15dd7940c8ac7584e76669cbf25b72}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!k\-Watchdog\-Expiration@{k\-Watchdog\-Expiration}}
+\index{k\-Watchdog\-Expiration@{k\-Watchdog\-Expiration}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{k\-Watchdog\-Expiration}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf \-Prototype\-Robot\-::k\-Watchdog\-Expiration} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_prototype_robot_a2f15dd7940c8ac7584e76669cbf25b72}
+\hypertarget{class_prototype_robot_a36d9223bd2fe9e9b657f6752ec2fbe94}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Arm@{m\-Arm}}
+\index{m\-Arm@{m\-Arm}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Motor\-Arm\-Component}$\ast$ {\bf \-Prototype\-Robot\-::m\-Arm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a36d9223bd2fe9e9b657f6752ec2fbe94}
+\hypertarget{class_prototype_robot_a5478de9598e5f16cc8f74f60cf854152}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Compressor@{m\-Compressor}}
+\index{m\-Compressor@{m\-Compressor}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Compressor}]{\setlength{\rightskip}{0pt plus 5cm}\-Compressor$\ast$ {\bf \-Prototype\-Robot\-::m\-Compressor}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a5478de9598e5f16cc8f74f60cf854152}
+\hypertarget{class_prototype_robot_a0ea7c8c7d32f9a237bd0dbb559c27dc2}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Controller\-Collection@{m\-Controller\-Collection}}
+\index{m\-Controller\-Collection@{m\-Controller\-Collection}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Controller\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf \-Base\-Controller}$\ast$$>$ {\bf \-Prototype\-Robot\-::m\-Controller\-Collection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a0ea7c8c7d32f9a237bd0dbb559c27dc2}
+\hypertarget{class_prototype_robot_adaab5819787642c2204e6f26f84c1871}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Kinect@{m\-Kinect}}
+\index{m\-Kinect@{m\-Kinect}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Kinect}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect$\ast$ {\bf \-Prototype\-Robot\-::m\-Kinect}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_adaab5819787642c2204e6f26f84c1871}
+\hypertarget{class_prototype_robot_acf1e651f477389c17bd0c78a0f80237b}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Left\-Back\-Drive@{m\-Left\-Back\-Drive}}
+\index{m\-Left\-Back\-Drive@{m\-Left\-Back\-Drive}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Left\-Back\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Prototype\-Robot\-::m\-Left\-Back\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_acf1e651f477389c17bd0c78a0f80237b}
+\hypertarget{class_prototype_robot_aa528a979ca0417689b689a5b8de5760c}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Left\-Front\-Drive@{m\-Left\-Front\-Drive}}
+\index{m\-Left\-Front\-Drive@{m\-Left\-Front\-Drive}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Left\-Front\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Prototype\-Robot\-::m\-Left\-Front\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_aa528a979ca0417689b689a5b8de5760c}
+\hypertarget{class_prototype_robot_a4b1666c78ec45587e5468a9e37fea463}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Left\-Joystick@{m\-Left\-Joystick}}
+\index{m\-Left\-Joystick@{m\-Left\-Joystick}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Left\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Prototype\-Robot\-::m\-Left\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a4b1666c78ec45587e5468a9e37fea463}
+\hypertarget{class_prototype_robot_a50e2be321cba606ee93ae8aca7cf513c}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Left\-Kinect\-Stick@{m\-Left\-Kinect\-Stick}}
+\index{m\-Left\-Kinect\-Stick@{m\-Left\-Kinect\-Stick}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Left\-Kinect\-Stick}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect\-Stick$\ast$ {\bf \-Prototype\-Robot\-::m\-Left\-Kinect\-Stick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a50e2be321cba606ee93ae8aca7cf513c}
+\hypertarget{class_prototype_robot_a7faff555689ab1768c5bd8b2f78fe029}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Pneumatic\-Arm@{m\-Pneumatic\-Arm}}
+\index{m\-Pneumatic\-Arm@{m\-Pneumatic\-Arm}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Pneumatic\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pneumatic\-Arm}$\ast$ {\bf \-Prototype\-Robot\-::m\-Pneumatic\-Arm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a7faff555689ab1768c5bd8b2f78fe029}
+\hypertarget{class_prototype_robot_a07872d55928f02046bbca01674ae1192}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Right\-Back\-Drive@{m\-Right\-Back\-Drive}}
+\index{m\-Right\-Back\-Drive@{m\-Right\-Back\-Drive}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Right\-Back\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Prototype\-Robot\-::m\-Right\-Back\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a07872d55928f02046bbca01674ae1192}
+\hypertarget{class_prototype_robot_a00cbde5b429dca9a0f2d1493b4a5b0b7}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Right\-Front\-Drive@{m\-Right\-Front\-Drive}}
+\index{m\-Right\-Front\-Drive@{m\-Right\-Front\-Drive}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Right\-Front\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Prototype\-Robot\-::m\-Right\-Front\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a00cbde5b429dca9a0f2d1493b4a5b0b7}
+\hypertarget{class_prototype_robot_adba5da50eb59a9a4bf87cd91523b3b38}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Right\-Joystick@{m\-Right\-Joystick}}
+\index{m\-Right\-Joystick@{m\-Right\-Joystick}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Right\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Prototype\-Robot\-::m\-Right\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_adba5da50eb59a9a4bf87cd91523b3b38}
+\hypertarget{class_prototype_robot_aee80524be604111679af71811c1dcb79}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Right\-Kinect\-Stick@{m\-Right\-Kinect\-Stick}}
+\index{m\-Right\-Kinect\-Stick@{m\-Right\-Kinect\-Stick}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Right\-Kinect\-Stick}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect\-Stick$\ast$ {\bf \-Prototype\-Robot\-::m\-Right\-Kinect\-Stick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_aee80524be604111679af71811c1dcb79}
+\hypertarget{class_prototype_robot_a59ebd43c14b20ccc1d8bbdd36903ae6a}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Robot\-Drive@{m\-Robot\-Drive}}
+\index{m\-Robot\-Drive@{m\-Robot\-Drive}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Robot\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Robot\-Drive$\ast$ {\bf \-Prototype\-Robot\-::m\-Robot\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a59ebd43c14b20ccc1d8bbdd36903ae6a}
+\hypertarget{class_prototype_robot_aa4594d0971bd4533ff0eb4e03a691819}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Servo@{m\-Servo}}
+\index{m\-Servo@{m\-Servo}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Servo}]{\setlength{\rightskip}{0pt plus 5cm}\-Servo$\ast$ {\bf \-Prototype\-Robot\-::m\-Servo}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_aa4594d0971bd4533ff0eb4e03a691819}
+\hypertarget{class_prototype_robot_a796da143a2bb4f066d02a917e07b51cb}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Solenoid1@{m\-Solenoid1}}
+\index{m\-Solenoid1@{m\-Solenoid1}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Solenoid1}]{\setlength{\rightskip}{0pt plus 5cm}\-Solenoid$\ast$ {\bf \-Prototype\-Robot\-::m\-Solenoid1}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a796da143a2bb4f066d02a917e07b51cb}
+\hypertarget{class_prototype_robot_a09a513e0fc667b2b63156caece8dcab0}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Solenoid2@{m\-Solenoid2}}
+\index{m\-Solenoid2@{m\-Solenoid2}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Solenoid2}]{\setlength{\rightskip}{0pt plus 5cm}\-Solenoid$\ast$ {\bf \-Prototype\-Robot\-::m\-Solenoid2}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a09a513e0fc667b2b63156caece8dcab0}
+\hypertarget{class_prototype_robot_a34901bc0b6099bf65cb29ab819487a4b}{\index{\-Prototype\-Robot@{\-Prototype\-Robot}!m\-Twist\-Joystick@{m\-Twist\-Joystick}}
+\index{m\-Twist\-Joystick@{m\-Twist\-Joystick}!PrototypeRobot@{\-Prototype\-Robot}}
+\subsubsection[{m\-Twist\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Prototype\-Robot\-::m\-Twist\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_prototype_robot_a34901bc0b6099bf65cb29ab819487a4b}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Profiles/\hyperlink{_prototype_robot_8h}{\-Prototype\-Robot.\-h}\item 
+\-Code/\-Profiles/\hyperlink{_prototype_robot_8cpp}{\-Prototype\-Robot.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\hypertarget{filter_8cpp}{\section{\-Code/\-Subsystems/filter.cpp \-File \-Reference}
+\label{filter_8cpp}\index{\-Code/\-Subsystems/filter.\-cpp@{\-Code/\-Subsystems/filter.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}filters.\-h\char`\"{}}\*
+\-Include dependency graph for filter.\-cpp\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filter_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{filter_8cpp_a52499c4f05b5197ba7382b76625ec102}{\-Square\-Input} (\hyperlink{struct_drive_speed}{\-Drive\-Speed} ds)
+\begin{DoxyCompactList}\small\item\em \-Squares the input of both sides to allow more sensitive driving when the joystick is pushed less. \end{DoxyCompactList}\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{filter_8cpp_a067ac671b29930d96b5f7288dccf73eb}{\-Reverse\-Direction} (\hyperlink{struct_drive_speed}{\-Drive\-Speed} ds)
+\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{filter_8cpp_ae1c64daeb5fe00f1b53b393a5ae6c0d0}{\-Add\-Speed\-Factor} (\hyperlink{struct_drive_speed}{\-Drive\-Speed} ds, float speed\-Factor)
+\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{filter_8cpp_a55899ef3e1597e86fe39df999d66f816}{\-Straighten} (\hyperlink{struct_drive_speed}{\-Drive\-Speed} ds)
+\item 
+\hyperlink{struct_drive_speed}{\-Drive\-Speed} \hyperlink{filter_8cpp_a7294595a14b9434ad5bf45fc022f77a3}{\-Add\-Truncation} (\hyperlink{struct_drive_speed}{\-Drive\-Speed} ds)
+\item 
+float \hyperlink{filter_8cpp_a66d9fd098ddb280a296334f59d4480a7}{truncate} (float value)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{filter_8cpp_ae1c64daeb5fe00f1b53b393a5ae6c0d0}{\index{filter.\-cpp@{filter.\-cpp}!\-Add\-Speed\-Factor@{\-Add\-Speed\-Factor}}
+\index{\-Add\-Speed\-Factor@{\-Add\-Speed\-Factor}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{\-Add\-Speed\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Add\-Speed\-Factor} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drive\-Speed}}]{ds, }
+\item[{float}]{speed\-Factor}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_ae1c64daeb5fe00f1b53b393a5ae6c0d0}
+\hypertarget{filter_8cpp_a7294595a14b9434ad5bf45fc022f77a3}{\index{filter.\-cpp@{filter.\-cpp}!\-Add\-Truncation@{\-Add\-Truncation}}
+\index{\-Add\-Truncation@{\-Add\-Truncation}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{\-Add\-Truncation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Add\-Truncation} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drive\-Speed}}]{ds}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_a7294595a14b9434ad5bf45fc022f77a3}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{filter_8cpp_a7294595a14b9434ad5bf45fc022f77a3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{filter_8cpp_a067ac671b29930d96b5f7288dccf73eb}{\index{filter.\-cpp@{filter.\-cpp}!\-Reverse\-Direction@{\-Reverse\-Direction}}
+\index{\-Reverse\-Direction@{\-Reverse\-Direction}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{\-Reverse\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Reverse\-Direction} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drive\-Speed}}]{ds}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_a067ac671b29930d96b5f7288dccf73eb}
+\hypertarget{filter_8cpp_a52499c4f05b5197ba7382b76625ec102}{\index{filter.\-cpp@{filter.\-cpp}!\-Square\-Input@{\-Square\-Input}}
+\index{\-Square\-Input@{\-Square\-Input}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{\-Square\-Input}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Square\-Input} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drive\-Speed}}]{ds}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_a52499c4f05b5197ba7382b76625ec102}
+
+
+\-Squares the input of both sides to allow more sensitive driving when the joystick is pushed less. 
+
+\hypertarget{filter_8cpp_a55899ef3e1597e86fe39df999d66f816}{\index{filter.\-cpp@{filter.\-cpp}!\-Straighten@{\-Straighten}}
+\index{\-Straighten@{\-Straighten}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{\-Straighten}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Drive\-Speed} {\bf \-Straighten} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Drive\-Speed}}]{ds}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_a55899ef3e1597e86fe39df999d66f816}
+\hypertarget{filter_8cpp_a66d9fd098ddb280a296334f59d4480a7}{\index{filter.\-cpp@{filter.\-cpp}!truncate@{truncate}}
+\index{truncate@{truncate}!filter.cpp@{filter.\-cpp}}
+\subsubsection[{truncate}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf truncate} (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)}}\label{filter_8cpp_a66d9fd098ddb280a296334f59d4480a7}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{filter_8cpp_a66d9fd098ddb280a296334f59d4480a7_cgraph}
+\end{center}
+\end{figure}
+
+
