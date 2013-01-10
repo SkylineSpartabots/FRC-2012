@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_target_finder.html#a454435f7197d5dfb6ed9ee7d209cf453" title="TargetFinder::GetCamera" alt="" coords="291,5,459,32"/>
+<area shape="rect" id="node5" href="$class_target_utils_1_1_sane_binary_image.html#a33a07eca59fad40fe8fb2de103c80bbd" title="TargetUtils::SaneBinaryImage::DetectRectangles" alt="" coords="222,56,527,83"/>
+<area shape="rect" id="node7" href="$struct_target_utils_1_1_coordinate.html#a2edf7d50bbd2217ae118adc8834448c9" title="TargetUtils::Coordinate::Set" alt="" coords="283,107,466,133"/>
+<area shape="rect" id="node9" href="$class_target_finder.html#a0ea376b02d360a6bb588b8b46868fe62" title="TargetFinder::CalculateDistanceBasedOnWidth" alt="" coords="227,157,522,184"/>
+<area shape="rect" id="node11" href="$class_target_finder.html#afdafb2b37f609d1be28817f1d389053d" title="TargetFinder::FindXAngle" alt="" coords="291,208,458,235"/>
+<area shape="rect" id="node13" href="$class_target_finder.html#abc6ce74f0e24ed2c2c6ad5c7a64dee4a" title="TargetFinder::FindYAngle" alt="" coords="290,259,459,285"/>
+</map>

@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_main_robot_8h.html" title="MainRobot.h" alt="" coords="479,80,573,107"/>
+<area shape="rect" id="node9" href="$arm_8h.html" title="Provides code to control the arm." alt="" coords="875,304,1019,331"/>
+<area shape="rect" id="node12" href="$components_8h.html" title="Contains base classes, typedefs for ports, and useful tools." alt="" coords="563,379,743,405"/>
+<area shape="rect" id="node20" href="$sensors_8h.html" title="A collection of component classes that combine provides extra functionality by using sensors..." alt="" coords="187,304,277,331"/>
+<area shape="rect" id="node24" href="$driving_8h.html" title="Contains the code used to drive the robot based on user input." alt="" coords="678,155,836,181"/>
+<area shape="rect" id="node28" href="$shooter_8h.html" title="Operates device that shoots basketballs." alt="" coords="627,229,703,256"/>
+<area shape="rect" id="node51" href="$xbox_8h.html" title="../Client/xbox.h" alt="" coords="302,304,412,331"/>
+<area shape="rect" id="node55" href="$elevator_8h.html" title="Provides code to control and manipulate the elevator, and the shooter&#45;elevator interface." alt="" coords="437,304,515,331"/>
+<area shape="rect" id="node71" href="$ports_8h.html" title="../Definitions/ports.h" alt="" coords="976,155,1115,181"/>
+<area shape="rect" id="node14" href="$tools_8h.html" title="../tools.h" alt="" coords="809,379,881,405"/>
+<area shape="rect" id="node62" href="$filters_8h.html" title="filters.h" alt="" coords="1043,304,1107,331"/>
+<area shape="rect" id="node35" href="$target_8h.html" title="Classes all about using the camera, analyzing images, and sending data back to the computer..." alt="" coords="1131,304,1261,331"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_base_kinect_controller.html#ad6e79c8e4afab9ba5451079890e31f39" title="Checks to see if the player is ready to operate the robot." alt="" coords="249,5,485,32"/>
+<area shape="rect" id="node5" href="$class_base_kinect_controller.html#aa50bf361285ea614f0f323f930d13b15" title="Halts the robot." alt="" coords="262,56,471,83"/>
+<area shape="rect" id="node7" href="$class_kinect_angle_controller.html#a143d6fce31c0442970de9714f10f82de" title="Checks to see if player has made a pushing&#45;forward motion with his or her right wrist to shoot manual..." alt="" coords="233,107,501,133"/>
+<area shape="rect" id="node9" href="$class_shooter.html#a05fdd64fa0a3eaca039a36269c47fe7c" title="Makes the wheels spin at a certain speed, typically set during manual mode." alt="" coords="301,157,433,184"/>
+<area shape="rect" id="node11" href="$class_kinect_angle_controller.html#abd47cb548e50524019d7377280d91c01" title="KinectAngleController::IsRaisingArm" alt="" coords="251,208,483,235"/>
+<area shape="rect" id="node13" href="$class_kinect_angle_controller.html#ab1341e591e41220a4e26cb72d2c83747" title="KinectAngleController::IsLoweringArm" alt="" coords="247,259,487,285"/>
+<area shape="rect" id="node15" href="$class_base_arm_component.html#a6c3cd421080031cf62b2f7f4e3ee5bc4" title="BaseArmComponent::GoUp" alt="" coords="275,309,458,336"/>
+<area shape="rect" id="node17" href="$class_base_arm_component.html#a210553246d376118840fc734e78f8a14" title="BaseArmComponent::GoDown" alt="" coords="267,360,466,387"/>
+<area shape="rect" id="node19" href="$class_base_arm_component.html#abfb9d7005b18704f76b7cde4296dcca0" title="BaseArmComponent::Stop" alt="" coords="278,411,455,437"/>
+</map>
