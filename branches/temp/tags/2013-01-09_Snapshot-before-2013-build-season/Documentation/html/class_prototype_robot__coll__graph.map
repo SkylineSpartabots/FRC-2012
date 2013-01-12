@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$class_base_motor_arm_component.html" title="A base class to lower the arm using limit switches." alt="" coords="5,160,179,187"/>
-<area shape="rect" id="node4" href="$class_base_arm_component.html" title="BaseArmComponent" alt="" coords="70,83,212,109"/>
-<area shape="rect" id="node8" href="$class_pneumatic_arm.html" title="Creates a pneumatics&#45;based arm controller." alt="" coords="203,160,311,187"/>
-<area shape="rect" id="node6" href="$class_base_component.html" title="A base class meant to be inherited from any component class." alt="" coords="82,5,200,32"/>
-</map>

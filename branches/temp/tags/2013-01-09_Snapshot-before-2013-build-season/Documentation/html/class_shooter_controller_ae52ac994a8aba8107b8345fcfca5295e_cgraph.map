@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$namespace_tools.html#a7f4eaf8719ea333f45be6f9cda129692" title="Takes a number between a certain range and scales it within another range." alt="" coords="271,5,374,32"/>
-<area shape="rect" id="node5" href="$class_shooter_controller.html#a7ebc6574dfe149fc6511e300e9b1455c" title="ShooterController::UpdatePresets" alt="" coords="215,56,431,83"/>
-<area shape="rect" id="node9" href="$class_shooter_controller.html#ac2dd9efc70a3f3a58949fbf2d3c343e0" title="ShooterController::IsPressingPreset" alt="" coords="208,107,437,133"/>
-<area shape="rect" id="node11" href="$class_shooter_controller.html#aba0407414a2db7209d5f0dc0ef974b9e" title="ShooterController::GetPreset" alt="" coords="228,157,417,184"/>
-<area shape="rect" id="node13" href="$class_shooter.html#a05fdd64fa0a3eaca039a36269c47fe7c" title="Makes the wheels spin at a certain speed, typically set during manual mode." alt="" coords="257,208,389,235"/>
-<area shape="rect" id="node7" href="$namespace_tools.html#a2b0885705a90e217a3a21e785086a22b" title="Tools::StringToFloat" alt="" coords="485,56,624,83"/>
-</map>

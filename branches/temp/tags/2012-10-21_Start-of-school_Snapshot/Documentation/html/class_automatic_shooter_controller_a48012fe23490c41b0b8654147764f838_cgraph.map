@@ -1,9 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_automatic_shooter_controller.html#ade48e6198578a2f8234fb9cac9b9dc31" title="Gets the position of the robot relative to the hoop and attempts to aim and hit it." alt="" coords="267,56,592,83"/>
-<area shape="rect" id="node15" href="$class_shooter.html#a05fdd64fa0a3eaca039a36269c47fe7c" title="Makes the wheels spin at a certain speed, typically set during manual mode." alt="" coords="363,107,495,133"/>
-<area shape="rect" id="node5" href="$class_automatic_shooter_controller.html#ab5a52a59dcb9957de5a20d5ddd9f5303" title="Calculates the distance from the wall in inches." alt="" coords="641,5,935,32"/>
-<area shape="rect" id="node11" href="$class_automatic_shooter_controller.html#a70e43da69046d53556c6738e6a1be93f" title="Calculates the speed the motors need to turn based on the distance to the wall." alt="" coords="648,56,928,83"/>
-<area shape="rect" id="node13" href="$namespace_tools.html#a7f4eaf8719ea333f45be6f9cda129692" title="Takes a number between a certain range and scales it within another range." alt="" coords="737,107,839,133"/>
-<area shape="rect" id="node7" href="$class_range_finder.html#a99084a15d47c494a2728da871953c499" title="Finds the distance from the wall in inches." alt="" coords="984,5,1181,32"/>
-<area shape="rect" id="node9" href="$class_range_finder.html#a5e851606cc6cbab25759a170c8f9f726" title="Finds the raw distance from the wall." alt="" coords="1229,5,1413,32"/>
-</map>

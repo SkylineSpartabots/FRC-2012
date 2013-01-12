@@ -1,5 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_calibrated_shooter_controller.html#ab7799ac7013ba36a2a1d90c6e7c57564" title="Updates the speeds of the top and bottom speeds based on the values found in the SmartDashboard." alt="" coords="264,5,539,32"/>
-<area shape="rect" id="node7" href="$class_shooter.html#a05fdd64fa0a3eaca039a36269c47fe7c" title="Makes the wheels spin at a certain speed, typically set during manual mode." alt="" coords="335,56,467,83"/>
-<area shape="rect" id="node5" href="$namespace_tools.html#a2b0885705a90e217a3a21e785086a22b" title="Tools::StringToFloat" alt="" coords="587,5,725,32"/>
-</map>

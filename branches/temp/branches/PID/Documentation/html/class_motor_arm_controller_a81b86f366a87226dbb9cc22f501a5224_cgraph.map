@@ -1,7 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_base_arm_component.html#a6c3cd421080031cf62b2f7f4e3ee5bc4" title="BaseArmComponent::GoUp" alt="" coords="242,5,425,32"/>
-<area shape="rect" id="node5" href="$class_base_arm_component.html#a210553246d376118840fc734e78f8a14" title="BaseArmComponent::GoDown" alt="" coords="234,56,433,83"/>
-<area shape="rect" id="node7" href="$namespace_tools.html#a2b0885705a90e217a3a21e785086a22b" title="Tools::StringToFloat" alt="" coords="264,107,403,133"/>
-<area shape="rect" id="node9" href="$class_base_motor_arm_component.html#a610812468e127706b11aabc97155c4c0" title="BaseMotorArmComponent::SafeSet" alt="" coords="219,157,448,184"/>
-<area shape="rect" id="node11" href="$class_base_motor_arm_component.html#af2ad1b40c5e0e55a694bb19cfe98c691" title="BaseMotorArmComponent::Set" alt="" coords="232,208,435,235"/>
-</map>

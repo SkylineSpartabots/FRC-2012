@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$class_prototype_robot.html#a589a866ea797e4bf9d135e9ef28d22d5" title="Initializes any code provided by WPILib meant to interface directly with specific hardware components..." alt="" coords="273,5,495,32"/>
-<area shape="rect" id="node5" href="$class_prototype_robot.html#a185aff067e319ee33d34e09564748f32" title="Initializes any hardware used by the laptop to send data over to the robot (joysticks, etc)." alt="" coords="264,56,504,83"/>
-<area shape="rect" id="node7" href="$class_prototype_robot.html#a272a6776690860c918d6660552ef29cb" title="Initializes any software components that bundles together hardware needed to provide additional funct..." alt="" coords="264,107,504,133"/>
-<area shape="rect" id="node9" href="$class_prototype_robot.html#af9b3adcf77f9f6781447db830501f42c" title="Initializes any software that takes in user input to manipulate hardware or software, or needs to be called periodically during operator control." alt="" coords="269,157,499,184"/>
-</map>
