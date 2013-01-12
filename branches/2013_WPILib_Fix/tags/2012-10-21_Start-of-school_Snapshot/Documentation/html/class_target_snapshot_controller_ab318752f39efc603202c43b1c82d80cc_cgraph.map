@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_target_finder.html#aad532bf0e501eeac6a6d746f47e2baa9" title="TargetFinder::GetTargets" alt="" coords="311,132,478,159"/>
+<area shape="rect" id="node17" href="$class_target_snapshot_controller.html#a28d3fc6d848da704588045656aa3e40c" title="TargetSnapshotController::FindHighestTarget" alt="" coords="254,183,535,209"/>
+<area shape="rect" id="node19" href="$class_target_snapshot_controller.html#ab21da3712c6b7028dc5ab44a75920a0a" title="TargetSnapshotController::PrintDiagnostics" alt="" coords="259,233,530,260"/>
+<area shape="rect" id="node21" href="$class_target_snapshot_controller.html#aed5339d5971deb85da11221769306764" title="TargetSnapshotController::Compare" alt="" coords="281,284,509,311"/>
+<area shape="rect" id="node5" href="$class_target_finder.html#a454435f7197d5dfb6ed9ee7d209cf453" title="TargetFinder::GetCamera" alt="" coords="653,5,821,32"/>
+<area shape="rect" id="node7" href="$class_target_utils_1_1_sane_binary_image.html#a33a07eca59fad40fe8fb2de103c80bbd" title="TargetUtils::SaneBinaryImage::DetectRectangles" alt="" coords="585,56,890,83"/>
+<area shape="rect" id="node9" href="$struct_target_utils_1_1_coordinate.html#a2edf7d50bbd2217ae118adc8834448c9" title="TargetUtils::Coordinate::Set" alt="" coords="646,107,829,133"/>
+<area shape="rect" id="node11" href="$class_target_finder.html#a0ea376b02d360a6bb588b8b46868fe62" title="TargetFinder::CalculateDistanceBasedOnWidth" alt="" coords="590,157,885,184"/>
+<area shape="rect" id="node13" href="$class_target_finder.html#afdafb2b37f609d1be28817f1d389053d" title="TargetFinder::FindXAngle" alt="" coords="654,208,821,235"/>
+<area shape="rect" id="node15" href="$class_target_finder.html#abc6ce74f0e24ed2c2c6ad5c7a64dee4a" title="TargetFinder::FindYAngle" alt="" coords="653,259,822,285"/>
+</map>

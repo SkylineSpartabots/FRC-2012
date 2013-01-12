@@ -1,0 +1,51 @@
+\hypertarget{shooter_8h}{\section{\-Code/\-Subsystems/shooter.h \-File \-Reference}
+\label{shooter_8h}\index{\-Code/\-Subsystems/shooter.\-h@{\-Code/\-Subsystems/shooter.\-h}}
+}
+
+
+\-Operates device that shoots basketballs.  
+
+
+{\ttfamily \#include $<$cmath$>$}\*
+{\ttfamily \#include \char`\"{}\-W\-P\-I\-Lib.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../sensors.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Definitions/components.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Tracking/target.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Client/xbox.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}elevator.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../tools.\-h\char`\"{}}\*
+\-Include dependency graph for shooter.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shooter_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{shooter_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_shooter}{\-Shooter}
+\begin{DoxyCompactList}\small\item\em \-Controls the shooter. \end{DoxyCompactList}\item 
+class \hyperlink{class_automatic_shooter_controller}{\-Automatic\-Shooter\-Controller}
+\begin{DoxyCompactList}\small\item\em \-A shooter controller which attempts to control the shooter based on input and distance. \end{DoxyCompactList}\item 
+class \hyperlink{class_calibrated_shooter_controller}{\-Calibrated\-Shooter\-Controller}
+\begin{DoxyCompactList}\small\item\em \-Allows you to adjust and test the precise speeds of the shooter via \-Smart\-Dashboard. \end{DoxyCompactList}\item 
+class \hyperlink{class_shooter_controller}{\-Shooter\-Controller}
+\begin{DoxyCompactList}\small\item\em \-Controls the shooter using a joystick. \end{DoxyCompactList}\item 
+class \hyperlink{class_shooter_xbox_controller}{\-Shooter\-Xbox\-Controller}
+\item 
+class \hyperlink{class_shooter_adjuster}{\-Shooter\-Adjuster}
+\begin{DoxyCompactList}\small\item\em \-Adjusts the robot to face the target more accurately. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Operates device that shoots basketballs. \begin{DoxyWarning}{\-Warning}
+\-The structure of this class is somewhat convoluted and intertwined. \-The way the code is arranged here is not optimal, and should not be emulated. \-However, we're not fixing or restructuring it because it works, and it would require too much testing to fix it. 
+\end{DoxyWarning}

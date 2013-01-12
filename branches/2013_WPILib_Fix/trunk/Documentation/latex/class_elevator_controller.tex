@@ -1,0 +1,118 @@
+\hypertarget{class_elevator_controller}{\section{\-Elevator\-Controller \-Class \-Reference}
+\label{class_elevator_controller}\index{\-Elevator\-Controller@{\-Elevator\-Controller}}
+}
+
+
+\-Interacts with the joystick to control the elevator.  
+
+
+
+
+{\ttfamily \#include $<$elevator.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Elevator\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_elevator_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Elevator\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_elevator_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_elevator_controller_a789f7373efbaf28dc863853575801c11}{\-Elevator\-Controller} (\hyperlink{class_elevator}{\-Elevator} $\ast$, \-Joystick $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Makes an instance of this class. \end{DoxyCompactList}\item 
+void \hyperlink{class_elevator_controller_acb23b14310035e5d005236c1f96a3a9c}{\-Run} ()
+\begin{DoxyCompactList}\small\item\em \-Provides a thin layer to control the elevator using a joystick. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_elevator}{\-Elevator} $\ast$ \hyperlink{class_elevator_controller_a9ccaa26570f171bb40da0837d755a190}{m\-Elevator}
+\item 
+\-Joystick $\ast$ \hyperlink{class_elevator_controller_a5c46184e464b02e9a2809a20a55722aa}{m\-Joystick}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Interacts with the joystick to control the elevator. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_elevator_controller_a789f7373efbaf28dc863853575801c11}{\index{\-Elevator\-Controller@{\-Elevator\-Controller}!\-Elevator\-Controller@{\-Elevator\-Controller}}
+\index{\-Elevator\-Controller@{\-Elevator\-Controller}!ElevatorController@{\-Elevator\-Controller}}
+\subsubsection[{\-Elevator\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elevator\-Controller\-::\-Elevator\-Controller} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Elevator} $\ast$}]{elevator, }
+\item[{\-Joystick $\ast$}]{joystick}
+\end{DoxyParamCaption}
+)}}\label{class_elevator_controller_a789f7373efbaf28dc863853575801c11}
+
+
+\-Makes an instance of this class. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em elevator} & \-Pointer to \hyperlink{class_elevator}{\-Elevator} object. \\
+\hline
+\mbox{\tt in}  & {\em joystick} & \-Pointer to joystick. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_elevator_controller_acb23b14310035e5d005236c1f96a3a9c}{\index{\-Elevator\-Controller@{\-Elevator\-Controller}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!ElevatorController@{\-Elevator\-Controller}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Elevator\-Controller\-::\-Run} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_elevator_controller_acb23b14310035e5d005236c1f96a3a9c}
+
+
+\-Provides a thin layer to control the elevator using a joystick. 
+
+\begin{DoxyWarning}{\-Warning}
+\-Inaccurate details.
+\end{DoxyWarning}
+\-Button 8 causes the conveyor belt to move the ball up until it reaches the top. \-The driver must press button 9 to continue moving the conveyor belt, i.\-e. load the ball into the shooter.
+
+\-A limit switch at the middle of the conveyor belt tells the driver if there is a ball at the middle of the conveyor belt; this way, the driver has room to decide to pick up another ball or continue moving the belt (and shoot the ball). 
+
+\-Implements \hyperlink{class_base_controller_a2c73f08fa403e1a4912ce4aaa348ac61}{\-Base\-Controller}.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_elevator_controller_acb23b14310035e5d005236c1f96a3a9c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_elevator_controller_a9ccaa26570f171bb40da0837d755a190}{\index{\-Elevator\-Controller@{\-Elevator\-Controller}!m\-Elevator@{m\-Elevator}}
+\index{m\-Elevator@{m\-Elevator}!ElevatorController@{\-Elevator\-Controller}}
+\subsubsection[{m\-Elevator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elevator}$\ast$ {\bf \-Elevator\-Controller\-::m\-Elevator}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_elevator_controller_a9ccaa26570f171bb40da0837d755a190}
+\hypertarget{class_elevator_controller_a5c46184e464b02e9a2809a20a55722aa}{\index{\-Elevator\-Controller@{\-Elevator\-Controller}!m\-Joystick@{m\-Joystick}}
+\index{m\-Joystick@{m\-Joystick}!ElevatorController@{\-Elevator\-Controller}}
+\subsubsection[{m\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Elevator\-Controller\-::m\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_elevator_controller_a5c46184e464b02e9a2809a20a55722aa}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{elevator_8h}{elevator.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{elevator_8cpp}{elevator.\-cpp}\end{DoxyCompactItemize}

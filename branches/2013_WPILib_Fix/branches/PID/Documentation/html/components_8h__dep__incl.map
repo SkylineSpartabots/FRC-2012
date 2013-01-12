@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$xbox_8h.html" title="Code/Client/xbox.h" alt="" coords="192,80,323,107"/>
+<area shape="rect" id="node7" href="$shooter_8h.html" title="Operates device that shoots basketballs." alt="" coords="498,155,684,181"/>
+<area shape="rect" id="node9" href="$driving_8h.html" title="Contains the code used to drive the robot based on user input." alt="" coords="909,229,1088,256"/>
+<area shape="rect" id="node11" href="$_main_robot_8h.html" title="Code/Profiles/MainRobot.h" alt="" coords="488,304,664,331"/>
+<area shape="rect" id="node17" href="$_prototype_robot_8h.html" title="Code/Profiles/PrototypeRobot.h" alt="" coords="1302,304,1506,331"/>
+<area shape="rect" id="node29" href="$components_8cpp.html" title="Code/Definitions/components.cpp" alt="" coords="1896,80,2112,107"/>
+<area shape="rect" id="node31" href="$arm_8h.html" title="Provides code to control the arm." alt="" coords="1294,155,1460,181"/>
+<area shape="rect" id="node38" href="$sensors_8h.html" title="A collection of component classes that combine provides extra functionality by using sensors..." alt="" coords="396,80,508,107"/>
+<area shape="rect" id="node46" href="$target_8h.html" title="Classes all about using the camera, analyzing images, and sending data back to the computer..." alt="" coords="1668,80,1820,107"/>
+<area shape="rect" id="node51" href="$track__silver_8h.html" title="Code/Tracking/track_silver.h" alt="" coords="1922,155,2107,181"/>
+<area shape="rect" id="node55" href="$elevator_8h.html" title="Provides code to control and manipulate the elevator, and the shooter&#45;elevator interface." alt="" coords="698,80,886,107"/>
+<area shape="rect" id="node61" href="$filters_8h.html" title="Code/Subsystems/filters.h" alt="" coords="1064,80,1238,107"/>
+<area shape="rect" id="node67" href="$testing_8h.html" title="Contains experimental code which doesn&#39;t fit cleanly into other files." alt="" coords="1536,80,1643,107"/>
+<area shape="rect" id="node5" href="$xbox_8cpp.html" title="Code/Client/xbox.cpp" alt="" coords="23,155,170,181"/>
+<area shape="rect" id="node25" href="$shooter_8cpp.html" title="Code/Subsystems/shooter.cpp" alt="" coords="482,229,683,256"/>
+<area shape="rect" id="node22" href="$driving_8cpp.html" title="Code/Subsystems/driving.cpp" alt="" coords="902,304,1096,331"/>
+<area shape="rect" id="node13" href="$main__entry__point_8cpp.html" title="The main entry point of the program." alt="" coords="958,379,1138,405"/>
+<area shape="rect" id="node15" href="$_main_robot_8cpp.html" title="Code/Profiles/MainRobot.cpp" alt="" coords="481,379,671,405"/>
+<area shape="rect" id="node20" href="$_prototype_robot_8cpp.html" title="Code/Profiles/PrototypeRobot.cpp" alt="" coords="1295,379,1514,405"/>
+<area shape="rect" id="node36" href="$arm_8cpp.html" title="Code/Subsystems/arm.cpp" alt="" coords="1136,229,1315,256"/>
+<area shape="rect" id="node42" href="$sensors_8cpp.html" title="Code/sensors.cpp" alt="" coords="346,155,472,181"/>
+<area shape="rect" id="node49" href="$target_8cpp.html" title="Code/Tracking/target.cpp" alt="" coords="1732,155,1898,181"/>
+<area shape="rect" id="node53" href="$track__silver_8cpp.html" title="Code/Tracking/track_silver.cpp" alt="" coords="1916,229,2114,256"/>
+<area shape="rect" id="node59" href="$elevator_8cpp.html" title="Code/Subsystems/elevator.cpp" alt="" coords="759,155,962,181"/>
+<area shape="rect" id="node64" href="$filter_8cpp.html" title="Code/Subsystems/filter.cpp" alt="" coords="1088,155,1270,181"/>
+<area shape="rect" id="node70" href="$testing_8cpp.html" title="Code/testing.cpp" alt="" coords="1587,155,1707,181"/>
+</map>

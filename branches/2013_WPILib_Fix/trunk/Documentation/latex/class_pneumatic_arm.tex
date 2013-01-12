@@ -1,0 +1,148 @@
+\hypertarget{class_pneumatic_arm}{\section{\-Pneumatic\-Arm \-Class \-Reference}
+\label{class_pneumatic_arm}\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}}
+}
+
+
+\-Creates a pneumatics-\/based arm controller.  
+
+
+
+
+{\ttfamily \#include $<$arm.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Pneumatic\-Arm\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_pneumatic_arm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Pneumatic\-Arm\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_pneumatic_arm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pneumatic_arm_ab9ef438d2778ee143b853cef468f6acd}{\-Pneumatic\-Arm} (\-Compressor $\ast$, \-Solenoid $\ast$, \-Solenoid $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Creates an instance of the \hyperlink{class_pneumatic_arm}{\-Pneumatic\-Arm} and starts the compressor. \end{DoxyCompactList}\item 
+\hyperlink{class_pneumatic_arm_adade8e69ecef8c21b048bf31d79616c2}{$\sim$\-Pneumatic\-Arm} ()
+\begin{DoxyCompactList}\small\item\em \-Destructor. \end{DoxyCompactList}\item 
+void \hyperlink{class_pneumatic_arm_a5bcd234f9ed510a5972f519c242a7d5c}{\-Go\-Up} ()
+\begin{DoxyCompactList}\small\item\em \-Moves the arm upwards. \end{DoxyCompactList}\item 
+void \hyperlink{class_pneumatic_arm_a7b20565ce0e2993d9abc9e6baacd505b}{\-Go\-Down} ()
+\begin{DoxyCompactList}\small\item\em \-Moves the arm downwards. \end{DoxyCompactList}\item 
+void \hyperlink{class_pneumatic_arm_a645088c55cf68b5078d2846b85bf691c}{\-Stop} ()
+\begin{DoxyCompactList}\small\item\em \-Does nothing; not implemented. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Compressor $\ast$ \hyperlink{class_pneumatic_arm_a4bc4e3cc68efbd806c65c0639534216c}{m\-Compressor}
+\item 
+\-Solenoid $\ast$ \hyperlink{class_pneumatic_arm_a5872efbd0f3b4d14f1942385e92924fe}{m\-Solenoid1}
+\item 
+\-Solenoid $\ast$ \hyperlink{class_pneumatic_arm_ad091886b85bd01de3df51f8d6c85924d}{m\-Solenoid2}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Creates a pneumatics-\/based arm controller. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_pneumatic_arm_ab9ef438d2778ee143b853cef468f6acd}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!\-Pneumatic\-Arm@{\-Pneumatic\-Arm}}
+\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{\-Pneumatic\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pneumatic\-Arm\-::\-Pneumatic\-Arm} (
+\begin{DoxyParamCaption}
+\item[{\-Compressor $\ast$}]{compressor, }
+\item[{\-Solenoid $\ast$}]{solenoid1, }
+\item[{\-Solenoid $\ast$}]{solenoid2}
+\end{DoxyParamCaption}
+)}}\label{class_pneumatic_arm_ab9ef438d2778ee143b853cef468f6acd}
+
+
+\-Creates an instance of the \hyperlink{class_pneumatic_arm}{\-Pneumatic\-Arm} and starts the compressor. 
+
+\hypertarget{class_pneumatic_arm_adade8e69ecef8c21b048bf31d79616c2}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!$\sim$\-Pneumatic\-Arm@{$\sim$\-Pneumatic\-Arm}}
+\index{$\sim$\-Pneumatic\-Arm@{$\sim$\-Pneumatic\-Arm}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{$\sim$\-Pneumatic\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pneumatic\-Arm\-::$\sim$\-Pneumatic\-Arm} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pneumatic_arm_adade8e69ecef8c21b048bf31d79616c2}
+
+
+\-Destructor. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_pneumatic_arm_a7b20565ce0e2993d9abc9e6baacd505b}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!\-Go\-Down@{\-Go\-Down}}
+\index{\-Go\-Down@{\-Go\-Down}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{\-Go\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pneumatic\-Arm\-::\-Go\-Down} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_pneumatic_arm_a7b20565ce0e2993d9abc9e6baacd505b}
+
+
+\-Moves the arm downwards. 
+
+
+
+\-Implements \hyperlink{class_base_arm_component_a210553246d376118840fc734e78f8a14}{\-Base\-Arm\-Component}.
+
+\hypertarget{class_pneumatic_arm_a5bcd234f9ed510a5972f519c242a7d5c}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!\-Go\-Up@{\-Go\-Up}}
+\index{\-Go\-Up@{\-Go\-Up}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{\-Go\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pneumatic\-Arm\-::\-Go\-Up} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_pneumatic_arm_a5bcd234f9ed510a5972f519c242a7d5c}
+
+
+\-Moves the arm upwards. 
+
+
+
+\-Implements \hyperlink{class_base_arm_component_a6c3cd421080031cf62b2f7f4e3ee5bc4}{\-Base\-Arm\-Component}.
+
+\hypertarget{class_pneumatic_arm_a645088c55cf68b5078d2846b85bf691c}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pneumatic\-Arm\-::\-Stop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_pneumatic_arm_a645088c55cf68b5078d2846b85bf691c}
+
+
+\-Does nothing; not implemented. 
+
+
+
+\-Implements \hyperlink{class_base_arm_component_abfb9d7005b18704f76b7cde4296dcca0}{\-Base\-Arm\-Component}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_pneumatic_arm_a4bc4e3cc68efbd806c65c0639534216c}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!m\-Compressor@{m\-Compressor}}
+\index{m\-Compressor@{m\-Compressor}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{m\-Compressor}]{\setlength{\rightskip}{0pt plus 5cm}\-Compressor$\ast$ {\bf \-Pneumatic\-Arm\-::m\-Compressor}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_pneumatic_arm_a4bc4e3cc68efbd806c65c0639534216c}
+\hypertarget{class_pneumatic_arm_a5872efbd0f3b4d14f1942385e92924fe}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!m\-Solenoid1@{m\-Solenoid1}}
+\index{m\-Solenoid1@{m\-Solenoid1}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{m\-Solenoid1}]{\setlength{\rightskip}{0pt plus 5cm}\-Solenoid$\ast$ {\bf \-Pneumatic\-Arm\-::m\-Solenoid1}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_pneumatic_arm_a5872efbd0f3b4d14f1942385e92924fe}
+\hypertarget{class_pneumatic_arm_ad091886b85bd01de3df51f8d6c85924d}{\index{\-Pneumatic\-Arm@{\-Pneumatic\-Arm}!m\-Solenoid2@{m\-Solenoid2}}
+\index{m\-Solenoid2@{m\-Solenoid2}!PneumaticArm@{\-Pneumatic\-Arm}}
+\subsubsection[{m\-Solenoid2}]{\setlength{\rightskip}{0pt plus 5cm}\-Solenoid$\ast$ {\bf \-Pneumatic\-Arm\-::m\-Solenoid2}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_pneumatic_arm_ad091886b85bd01de3df51f8d6c85924d}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{arm_8h}{arm.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{arm_8cpp}{arm.\-cpp}\end{DoxyCompactItemize}

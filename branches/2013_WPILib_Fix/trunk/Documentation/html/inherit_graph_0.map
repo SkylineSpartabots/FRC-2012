@@ -1,0 +1,15 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_base_component.html" title="A base class meant to be inherited from any component class." alt="" coords="6,233,125,260"/>
+<area shape="rect" id="node3" href="$class_base_arm_component.html" title="BaseArmComponent" alt="" coords="174,107,317,133"/>
+<area shape="rect" id="node17" href="$class_elevator.html" title="Transfers the ball from the floor to the top of the elevator." alt="" coords="211,157,279,184"/>
+<area shape="rect" id="node19" href="$class_range_finder.html" title="Uses the rangefinder to find the distance from the wall." alt="" coords="198,208,293,235"/>
+<area shape="rect" id="node21" href="$class_shooter.html" title="Controls the shooter." alt="" coords="212,259,279,285"/>
+<area shape="rect" id="node23" href="$class_shooter_adjuster.html" title="Adjusts the robot to face the target more accurately." alt="" coords="188,309,303,336"/>
+<area shape="rect" id="node25" href="$class_target_finder.html" title="TargetFinder" alt="" coords="198,360,293,387"/>
+<area shape="rect" id="node5" href="$class_base_motor_arm_component.html" title="A base class to lower the arm using limit switches." alt="" coords="366,56,541,83"/>
+<area shape="rect" id="node13" href="$class_pneumatic_arm.html" title="Creates a pneumatics&#45;based arm controller." alt="" coords="399,107,507,133"/>
+<area shape="rect" id="node15" href="$class_pneumatic_test_arm.html" title="PneumaticTestArm" alt="" coords="387,157,520,184"/>
+<area shape="rect" id="node7" href="$class_guarded_arm.html" title="Provides code to control the arm with two limit switches." alt="" coords="607,5,702,32"/>
+<area shape="rect" id="node9" href="$class_simple_arm.html" title="A simple arm object that does not use limit switches." alt="" coords="611,56,698,83"/>
+<area shape="rect" id="node11" href="$class_single_guarded_arm.html" title="SingleGuardedArm" alt="" coords="589,107,720,133"/>
+</map>

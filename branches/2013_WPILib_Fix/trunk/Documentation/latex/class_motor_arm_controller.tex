@@ -1,0 +1,129 @@
+\hypertarget{class_motor_arm_controller}{\section{\-Motor\-Arm\-Controller \-Class \-Reference}
+\label{class_motor_arm_controller}\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}}
+}
+
+
+\-Interacts with joystick to control a motor-\/based arm.  
+
+
+
+
+{\ttfamily \#include $<$arm.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Motor\-Arm\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_motor_arm_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Motor\-Arm\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_motor_arm_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_motor_arm_controller_ab5419aad4122c6f033675ae4fe954232}{\-Motor\-Arm\-Controller} (\hyperlink{class_base_motor_arm_component}{\-Base\-Motor\-Arm\-Component} $\ast$, \-Joystick $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Creates an instance of this class. \end{DoxyCompactList}\item 
+void \hyperlink{class_motor_arm_controller_a81b86f366a87226dbb9cc22f501a5224}{\-Run} (void)
+\begin{DoxyCompactList}\small\item\em \-Provides a thin layer to control the arm using a joystick. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_motor_arm_component}{\-Base\-Motor\-Arm\-Component} $\ast$ \hyperlink{class_motor_arm_controller_a149d1988cb596750890076784342e351}{m\-Arm}
+\item 
+\-Joystick $\ast$ \hyperlink{class_motor_arm_controller_a6a5b5137268f126d0d71cd1d39d2542e}{m\-Joystick}
+\item 
+float \hyperlink{class_motor_arm_controller_a93a818b75f8b0a7c94bcfbfe1a7130f5}{m\-Raw\-Power}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Interacts with joystick to control a motor-\/based arm. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_motor_arm_controller_ab5419aad4122c6f033675ae4fe954232}{\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}}
+\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!MotorArmController@{\-Motor\-Arm\-Controller}}
+\subsubsection[{\-Motor\-Arm\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Motor\-Arm\-Controller\-::\-Motor\-Arm\-Controller} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Base\-Motor\-Arm\-Component} $\ast$}]{arm, }
+\item[{\-Joystick $\ast$}]{joystick}
+\end{DoxyParamCaption}
+)}}\label{class_motor_arm_controller_ab5419aad4122c6f033675ae4fe954232}
+
+
+\-Creates an instance of this class. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em arm} & \-Pointer to the arm. \\
+\hline
+\mbox{\tt in}  & {\em joystick} & \-Pointer to the joystick. \\
+\hline
+\end{DoxyParams}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_arm_controller_ab5419aad4122c6f033675ae4fe954232_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_motor_arm_controller_a81b86f366a87226dbb9cc22f501a5224}{\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!MotorArmController@{\-Motor\-Arm\-Controller}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Motor\-Arm\-Controller\-::\-Run} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_motor_arm_controller_a81b86f366a87226dbb9cc22f501a5224}
+
+
+\-Provides a thin layer to control the arm using a joystick. 
+
+
+
+\-Implements \hyperlink{class_base_controller_a2c73f08fa403e1a4912ce4aaa348ac61}{\-Base\-Controller}.
+
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_motor_arm_controller_a81b86f366a87226dbb9cc22f501a5224_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_motor_arm_controller_a149d1988cb596750890076784342e351}{\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!m\-Arm@{m\-Arm}}
+\index{m\-Arm@{m\-Arm}!MotorArmController@{\-Motor\-Arm\-Controller}}
+\subsubsection[{m\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Motor\-Arm\-Component}$\ast$ {\bf \-Motor\-Arm\-Controller\-::m\-Arm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_motor_arm_controller_a149d1988cb596750890076784342e351}
+\hypertarget{class_motor_arm_controller_a6a5b5137268f126d0d71cd1d39d2542e}{\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!m\-Joystick@{m\-Joystick}}
+\index{m\-Joystick@{m\-Joystick}!MotorArmController@{\-Motor\-Arm\-Controller}}
+\subsubsection[{m\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Motor\-Arm\-Controller\-::m\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_motor_arm_controller_a6a5b5137268f126d0d71cd1d39d2542e}
+\hypertarget{class_motor_arm_controller_a93a818b75f8b0a7c94bcfbfe1a7130f5}{\index{\-Motor\-Arm\-Controller@{\-Motor\-Arm\-Controller}!m\-Raw\-Power@{m\-Raw\-Power}}
+\index{m\-Raw\-Power@{m\-Raw\-Power}!MotorArmController@{\-Motor\-Arm\-Controller}}
+\subsubsection[{m\-Raw\-Power}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Motor\-Arm\-Controller\-::m\-Raw\-Power}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_motor_arm_controller_a93a818b75f8b0a7c94bcfbfe1a7130f5}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{arm_8h}{arm.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{arm_8cpp}{arm.\-cpp}\end{DoxyCompactItemize}

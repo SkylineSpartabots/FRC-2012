@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_elevator.html#a0b5ef4805646fd221e6d048cd7ceecf6" title="Checks to see if there is a ball at the top of the elevator." alt="" coords="238,5,341,32"/>
+<area shape="rect" id="node5" href="$class_elevator.html#a4d1771aa38cdd521b0a49bab5b73fc50" title="Makes the elevator move up." alt="" coords="228,56,351,83"/>
+<area shape="rect" id="node7" href="$class_elevator.html#adca8651a978896e9d6c39b2dbda293b8" title="Makes the elevator move down." alt="" coords="220,107,359,133"/>
+<area shape="rect" id="node9" href="$class_elevator.html#a458b763a246ca3d792a204656234c3bb" title="Elevator::IsBallAtBottom" alt="" coords="208,157,371,184"/>
+</map>

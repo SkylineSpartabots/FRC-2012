@@ -1,0 +1,28 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$class_base_controller.html" title="A base class meant to be inherited from any controller class." alt="" coords="5,487,112,513"/>
+<area shape="rect" id="node3" href="$class_arm_controller.html" title="ArmController" alt="" coords="200,56,301,83"/>
+<area shape="rect" id="node5" href="$class_automatic_shooter_controller.html" title="A shooter controller which attempts to control the shooter based on input and distance." alt="" coords="160,107,341,133"/>
+<area shape="rect" id="node7" href="$class_base_joystick_controller.html" title="A baseclass for any controller that uses a joystick." alt="" coords="173,157,328,184"/>
+<area shape="rect" id="node19" href="$class_base_kinect_controller.html" title="A base class for any controller using a Kinect." alt="" coords="179,208,323,235"/>
+<area shape="rect" id="node25" href="$class_calibrated_shooter_controller.html" title="Allows you to adjust and test the precise speeds of the shooter via SmartDashboard." alt="" coords="161,259,341,285"/>
+<area shape="rect" id="node27" href="$class_controller_switcher.html" title="A container class to hold a series of controllers to allow a user to switch between them via the smar..." alt="" coords="187,309,314,336"/>
+<area shape="rect" id="node29" href="$class_digital_input_test_controller.html" title="A thin layer to test input and output from a limit switch or other DigitalIO device." alt="" coords="167,360,334,387"/>
+<area shape="rect" id="node31" href="$class_elevator_controller.html" title="Interacts with the joystick to control the elevator." alt="" coords="189,411,312,437"/>
+<area shape="rect" id="node33" href="$class_gyro_test.html" title="A thin layer to print data from the WPILib Gyro to the SmartDashboard." alt="" coords="213,461,288,488"/>
+<area shape="rect" id="node35" href="$class_minimalist_drive.html" title="A driving system designed to keep the robot from moving without the watchdogs complaining there&#39;s no ..." alt="" coords="196,512,305,539"/>
+<area shape="rect" id="node37" href="$class_motor_arm_controller.html" title="Interacts with joystick to control a motor&#45;based arm." alt="" coords="183,563,318,589"/>
+<area shape="rect" id="node39" href="$class_range_finder_test.html" title="A thin layer to print data from the Rangefinder to the SmartDashboard." alt="" coords="191,613,311,640"/>
+<area shape="rect" id="node41" href="$class_servo_controller.html" title="A experimental class used to control a servo." alt="" coords="196,664,305,691"/>
+<area shape="rect" id="node43" href="$class_shooter_controller.html" title="Controls the shooter using a joystick." alt="" coords="189,715,312,741"/>
+<area shape="rect" id="node45" href="$class_shooter_xbox_controller.html" title="ShooterXboxController" alt="" coords="175,765,326,792"/>
+<area shape="rect" id="node47" href="$class_target_snapshot_controller.html" title="This class is responsible for taking a picture snapshot." alt="" coords="167,816,335,843"/>
+<area shape="rect" id="node49" href="$class_xbox_drive.html" title="XboxDrive" alt="" coords="211,867,290,893"/>
+<area shape="rect" id="node51" href="$class_xbox_test.html" title="XboxTest" alt="" coords="213,917,288,944"/>
+<area shape="rect" id="node9" href="$class_arcade_joystick.html" title="ArcadeJoystick" alt="" coords="407,5,518,32"/>
+<area shape="rect" id="node11" href="$class_safety_mode.html" title="A mode of controlling the robot (tank drive) but specifically calibrated to be safer and for demonstr..." alt="" coords="417,56,508,83"/>
+<area shape="rect" id="node13" href="$class_single_joystick.html" title="Takes a single joystick and drives the robot, arcade style." alt="" coords="409,107,516,133"/>
+<area shape="rect" id="node15" href="$class_tank_joysticks.html" title="Takes two joysticks and drives the robot, tank&#45;style." alt="" coords="410,157,515,184"/>
+<area shape="rect" id="node17" href="$class_test_motor.html" title="Tests a motor using a joystick." alt="" coords="423,208,503,235"/>
+<area shape="rect" id="node21" href="$class_kinect_angle_controller.html" title="Uses a kinect to drive the robot &#45;&#45; this time, based on the angle of the hands to the shoulders..." alt="" coords="389,259,536,285"/>
+<area shape="rect" id="node23" href="$class_kinect_controller.html" title="Takes a Kinect and uses hand gestures to drive the robot." alt="" coords="405,309,520,336"/>
+</map>

@@ -1,0 +1,363 @@
+\hypertarget{class_main_robot}{\section{\-Main\-Robot \-Class \-Reference}
+\label{class_main_robot}\index{\-Main\-Robot@{\-Main\-Robot}}
+}
+
+
+\-This class bundles together everything to ultimately run and control the robot.  
+
+
+
+
+{\ttfamily \#include $<$\-Main\-Robot.\-h$>$}
+
+
+
+\-Collaboration diagram for \-Main\-Robot\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_robot__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_robot_aef8d8dab2785deeac135bf10f56638bc}{\-Main\-Robot} ()
+\item 
+\hyperlink{class_main_robot_a850375c2d8b306e9ed5216e7362eb65a}{$\sim$\-Main\-Robot} ()
+\begin{DoxyCompactList}\small\item\em \-Destroys all hardware, input devices, and software created for the entire robot. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_a19cb0eb18abdb7afabf26b9e5fd454b7}{\-Robot\-Init} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes all hardware, input devices, and software for the entire robot. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_a717c79b7473721ed0c1b2e994658b4aa}{\-Autonomous} ()
+\begin{DoxyCompactList}\small\item\em \-The code to be run during \-Autonomous mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_ad14b66387dd3e434ae7234508ba898ea}{\-Operator\-Control} ()
+\begin{DoxyCompactList}\small\item\em \-The code to be run during \-Teleoperated mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_robot_ad678a5f6033e2d299e2d83d4b0c9d055}{\-Initialize\-Hardware} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any code provided by \-W\-P\-I\-Lib meant to interface directly with specific hardware components. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_a4a88b614c4ed0bae3e9ae26dd81100a7}{\-Initialize\-Input\-Devices} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any hardware used by the laptop to send data over to the robot (joysticks, etc). \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_a1f80d64a6b9eef342f589eb953c74341}{\-Initialize\-Components} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any software components that bundles together hardware needed to provide additional functionality. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_robot_aea7bedc178f428c048ba5b307dd3b354}{\-Initialize\-Controllers} ()
+\begin{DoxyCompactList}\small\item\em \-Initializes any software that takes in user input to manipulate hardware or software, or needs to be called periodically during operator control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Robot\-Drive $\ast$ \hyperlink{class_main_robot_af30bcbfefdc86125ee358df0070ffc6c}{m\-Robot\-Drive}
+\item 
+\-Analog\-Channel $\ast$ \hyperlink{class_main_robot_abf7ba8751a75e0b3d7157ac359ee45c0}{m\-Ultrasound\-Sensor}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_aa4ebe10faab3310b89beab973c71495f}{m\-Left\-Front\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_aed74497f38a5fa85edbcbdbc62c7aa5d}{m\-Left\-Back\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a1bfc90c1733f991a56a311b1d76aa5c5}{m\-Right\-Front\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a1dbda505a92e08b53818aea4c1c14ff4}{m\-Right\-Back\-Drive}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_afcd7a094aaf209800538edc2877e3da2}{m\-Top\-Left\-Shooter}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a809d62629624a0df2727b264b05f296c}{m\-Top\-Right\-Shooter}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a69e7d492c28398a78c60f2e81c83c988}{m\-Bottom\-Left\-Shooter}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a3656f8030169345c6ba13814265fc37f}{m\-Bottom\-Right\-Shooter}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_ae7b1431cf829a6e482e88cc96eb212fc}{m\-Arm\-Speed\-Controller}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_main_robot_a4eed75b4a0820bc454befbf958974732}{m\-Elevator\-Speed\-Controller}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_main_robot_a1e38fd4d2d15887d10bf651eccb543f5}{m\-Elevator\-Bottom\-Limit\-Switch}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_main_robot_ae6176b12fcb13c89aa3693b073897b1a}{m\-Elevator\-Top\-Limit\-Switch}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_main_robot_add74215b836445c14c44d346eaab5fb8}{m\-Top\-Limit}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_main_robot_a3493db194b1541e9ba6417a130f2c167}{m\-Bottom\-Limit}
+\item 
+\-Joystick $\ast$ \hyperlink{class_main_robot_a7aba3a785cdb33afb26916c4ba1b977f}{m\-Left\-Joystick}
+\item 
+\-Joystick $\ast$ \hyperlink{class_main_robot_a11d16a0a8a5216cedb29cc2affe8657c}{m\-Right\-Joystick}
+\item 
+\-Joystick $\ast$ \hyperlink{class_main_robot_a93c7b0ef0ea295e83c2b5dc7f006516f}{m\-Twist\-Joystick}
+\item 
+\-Kinect $\ast$ \hyperlink{class_main_robot_ad6e81885bc91b6a61320eef719e78b85}{m\-Kinect}
+\item 
+\hyperlink{class_xbox_controller}{\-Xbox\-Controller} $\ast$ \hyperlink{class_main_robot_a097d8b9d4c41f1ddf0ea95522969d46f}{m\-Xbox\-Controller}
+\item 
+\hyperlink{class_range_finder}{\-Range\-Finder} $\ast$ \hyperlink{class_main_robot_a5f0eac828cc63df5ff95244cbc54933c}{m\-Range\-Finder}
+\item 
+\hyperlink{class_shooter}{\-Shooter} $\ast$ \hyperlink{class_main_robot_ae1a1727a4b2441215d9c756100dea0d9}{m\-Shooter}
+\item 
+\hyperlink{class_elevator}{\-Elevator} $\ast$ \hyperlink{class_main_robot_a26cd14099f6d1fa7a1688de50608ce84}{m\-Elevator}
+\item 
+\-Kinect\-Stick $\ast$ \hyperlink{class_main_robot_aea5c68bbc133d2353f09a801b4a75b20}{m\-Left\-Kinect\-Stick}
+\item 
+\-Kinect\-Stick $\ast$ \hyperlink{class_main_robot_a46bf11190f370fc2dcff59000e9443f4}{m\-Right\-Kinect\-Stick}
+\item 
+\hyperlink{class_target_finder}{\-Target\-Finder} $\ast$ \hyperlink{class_main_robot_abe4f2b3d49a5eeae4ba4dd708c592b7e}{m\-Target\-Finder}
+\item 
+\hyperlink{class_base_motor_arm_component}{\-Base\-Motor\-Arm\-Component} $\ast$ \hyperlink{class_main_robot_ab546e398e21420c01448ab3e69e97d8f}{m\-Arm}
+\item 
+vector$<$ \hyperlink{class_base_controller}{\-Base\-Controller} $\ast$ $>$ \hyperlink{class_main_robot_a7efe6ec510194b6a8e7086a0fca9036d}{m\-Controller\-Collection}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Private \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const double \hyperlink{class_main_robot_a4e6229fb0a09d81783c6ac16258329b2}{k\-Motor\-Wait} = 0.\-01
+\item 
+static const double \hyperlink{class_main_robot_a51bf97ba67ef557e633ae4456ddbb257}{k\-Watchdog\-Expiration} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This class bundles together everything to ultimately run and control the robot. 
+
+\-When the robot starts, a single instance of this class is created by a macro (provided by \-W\-P\-I\-Lib). \-This class must provide several methods in order to be fully functional\-:
+\begin{DoxyItemize}
+\item \hyperlink{class_main_robot_a717c79b7473721ed0c1b2e994658b4aa}{\-Autonomous()}
+\item \hyperlink{class_main_robot_ad14b66387dd3e434ae7234508ba898ea}{\-Operator\-Control()}
+\end{DoxyItemize}
+
+\-It may also provide additional methods provided by \-W\-P\-I\-Lib and \-Simple\-Robot.
+
+\-This class is the only one that is allowed to create instances of any \-W\-P\-I\-Lib classes, \-Components, and \-Controllers (to prevent accidental memory leaks with pointers). \-However, any class is allowed to create instances of normal classes. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_main_robot_aef8d8dab2785deeac135bf10f56638bc}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Main\-Robot@{\-Main\-Robot}}
+\index{\-Main\-Robot@{\-Main\-Robot}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Main\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Robot\-::\-Main\-Robot} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_main_robot_aef8d8dab2785deeac135bf10f56638bc}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_robot_aef8d8dab2785deeac135bf10f56638bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_robot_a850375c2d8b306e9ed5216e7362eb65a}{\index{\-Main\-Robot@{\-Main\-Robot}!$\sim$\-Main\-Robot@{$\sim$\-Main\-Robot}}
+\index{$\sim$\-Main\-Robot@{$\sim$\-Main\-Robot}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{$\sim$\-Main\-Robot}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Main\-Robot\-::$\sim$\-Main\-Robot} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_main_robot_a850375c2d8b306e9ed5216e7362eb65a}
+
+
+\-Destroys all hardware, input devices, and software created for the entire robot. 
+
+\begin{DoxyWarning}{\-Warning}
+\-This is frequently out-\/of-\/date. 
+\end{DoxyWarning}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_main_robot_a717c79b7473721ed0c1b2e994658b4aa}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Autonomous@{\-Autonomous}}
+\index{\-Autonomous@{\-Autonomous}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Autonomous}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Autonomous} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_main_robot_a717c79b7473721ed0c1b2e994658b4aa}
+
+
+\-The code to be run during \-Autonomous mode. 
+
+\-This is a mandatory function required for the robot to function. \-When the '\-Autonomous' toggle is selected and enabled on the \-F\-R\-C \-Dashboard, this function will run.
+
+\-It is meant to be run once, at the start of the match, during \-Hybrid mode, for 15 seconds.
+
+\begin{DoxyRefDesc}{\-Todo}
+\item[\hyperlink{todo__todo000001}{\-Todo}]\-Currently waits until \-Autonomous is disabled. \end{DoxyRefDesc}
+\hypertarget{class_main_robot_a1f80d64a6b9eef342f589eb953c74341}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Initialize\-Components@{\-Initialize\-Components}}
+\index{\-Initialize\-Components@{\-Initialize\-Components}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Initialize\-Components}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Initialize\-Components} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a1f80d64a6b9eef342f589eb953c74341}
+
+
+\-Initializes any software components that bundles together hardware needed to provide additional functionality. 
+
+\-For example, code to run the shooter would be initialized here because it uses several \-Jaguars and a \-Joystick to function.
+
+\-Ideally, each class instantiated should have \hyperlink{class_base_component}{\-Base\-Component} as a parent class. \hypertarget{class_main_robot_aea7bedc178f428c048ba5b307dd3b354}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Initialize\-Controllers@{\-Initialize\-Controllers}}
+\index{\-Initialize\-Controllers@{\-Initialize\-Controllers}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Initialize\-Controllers}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Initialize\-Controllers} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_aea7bedc178f428c048ba5b307dd3b354}
+
+
+\-Initializes any software that takes in user input to manipulate hardware or software, or needs to be called periodically during operator control. 
+
+\-Each object initialized in this file must inherit \hyperlink{class_base_controller}{\-Base\-Controller}. \-They are assigned to the heap, and appended to the end of \hyperlink{class_main_robot_a7efe6ec510194b6a8e7086a0fca9036d}{\-Main\-Robot\-::m\-Controller\-Collection}, \hypertarget{class_main_robot_ad678a5f6033e2d299e2d83d4b0c9d055}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Initialize\-Hardware@{\-Initialize\-Hardware}}
+\index{\-Initialize\-Hardware@{\-Initialize\-Hardware}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Initialize\-Hardware}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Initialize\-Hardware} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ad678a5f6033e2d299e2d83d4b0c9d055}
+
+
+\-Initializes any code provided by \-W\-P\-I\-Lib meant to interface directly with specific hardware components. 
+
+\-Currently initializes the
+\begin{DoxyItemize}
+\item \-Robot drive
+\item \-Jaguars for the shooter
+\item \-Ultrasound sensor
+\item \-Gyro 
+\end{DoxyItemize}\hypertarget{class_main_robot_a4a88b614c4ed0bae3e9ae26dd81100a7}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Initialize\-Input\-Devices@{\-Initialize\-Input\-Devices}}
+\index{\-Initialize\-Input\-Devices@{\-Initialize\-Input\-Devices}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Initialize\-Input\-Devices}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Initialize\-Input\-Devices} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a4a88b614c4ed0bae3e9ae26dd81100a7}
+
+
+\-Initializes any hardware used by the laptop to send data over to the robot (joysticks, etc). 
+
+\-Currently initializes the
+\begin{DoxyItemize}
+\item \-Joysticks
+\item \-Kinect 
+\end{DoxyItemize}\hypertarget{class_main_robot_ad14b66387dd3e434ae7234508ba898ea}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Operator\-Control@{\-Operator\-Control}}
+\index{\-Operator\-Control@{\-Operator\-Control}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Operator\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Operator\-Control} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_main_robot_ad14b66387dd3e434ae7234508ba898ea}
+
+
+\-The code to be run during \-Teleoperated mode. 
+
+\-This is a mandatory function required for the robot to function. \-When the '\-Teleoperated' toggle is selected and enabled on the \-F\-R\-C \-Dashboard, this function will run.
+
+\-This method will repeatedly call the '\-Run' methods of any class (that inherited \hyperlink{class_base_controller}{\-Base\-Controller}) that has been added to m\-Controller\-Collection. \hypertarget{class_main_robot_a19cb0eb18abdb7afabf26b9e5fd454b7}{\index{\-Main\-Robot@{\-Main\-Robot}!\-Robot\-Init@{\-Robot\-Init}}
+\index{\-Robot\-Init@{\-Robot\-Init}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{\-Robot\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Main\-Robot\-::\-Robot\-Init} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_main_robot_a19cb0eb18abdb7afabf26b9e5fd454b7}
+
+
+\-Initializes all hardware, input devices, and software for the entire robot. 
+
+\-This class will also enable the watchdog. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_main_robot_a4e6229fb0a09d81783c6ac16258329b2}{\index{\-Main\-Robot@{\-Main\-Robot}!k\-Motor\-Wait@{k\-Motor\-Wait}}
+\index{k\-Motor\-Wait@{k\-Motor\-Wait}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{k\-Motor\-Wait}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf \-Main\-Robot\-::k\-Motor\-Wait} = 0.\-01\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_main_robot_a4e6229fb0a09d81783c6ac16258329b2}
+\hypertarget{class_main_robot_a51bf97ba67ef557e633ae4456ddbb257}{\index{\-Main\-Robot@{\-Main\-Robot}!k\-Watchdog\-Expiration@{k\-Watchdog\-Expiration}}
+\index{k\-Watchdog\-Expiration@{k\-Watchdog\-Expiration}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{k\-Watchdog\-Expiration}]{\setlength{\rightskip}{0pt plus 5cm}const double {\bf \-Main\-Robot\-::k\-Watchdog\-Expiration} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_main_robot_a51bf97ba67ef557e633ae4456ddbb257}
+\hypertarget{class_main_robot_ab546e398e21420c01448ab3e69e97d8f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Arm@{m\-Arm}}
+\index{m\-Arm@{m\-Arm}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Motor\-Arm\-Component}$\ast$ {\bf \-Main\-Robot\-::m\-Arm}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ab546e398e21420c01448ab3e69e97d8f}
+\hypertarget{class_main_robot_ae7b1431cf829a6e482e88cc96eb212fc}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Arm\-Speed\-Controller@{m\-Arm\-Speed\-Controller}}
+\index{m\-Arm\-Speed\-Controller@{m\-Arm\-Speed\-Controller}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Arm\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Arm\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ae7b1431cf829a6e482e88cc96eb212fc}
+\hypertarget{class_main_robot_a69e7d492c28398a78c60f2e81c83c988}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Bottom\-Left\-Shooter@{m\-Bottom\-Left\-Shooter}}
+\index{m\-Bottom\-Left\-Shooter@{m\-Bottom\-Left\-Shooter}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Bottom\-Left\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Bottom\-Left\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a69e7d492c28398a78c60f2e81c83c988}
+\hypertarget{class_main_robot_a3493db194b1541e9ba6417a130f2c167}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Bottom\-Limit@{m\-Bottom\-Limit}}
+\index{m\-Bottom\-Limit@{m\-Bottom\-Limit}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Bottom\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Main\-Robot\-::m\-Bottom\-Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a3493db194b1541e9ba6417a130f2c167}
+\hypertarget{class_main_robot_a3656f8030169345c6ba13814265fc37f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Bottom\-Right\-Shooter@{m\-Bottom\-Right\-Shooter}}
+\index{m\-Bottom\-Right\-Shooter@{m\-Bottom\-Right\-Shooter}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Bottom\-Right\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Bottom\-Right\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a3656f8030169345c6ba13814265fc37f}
+\hypertarget{class_main_robot_a7efe6ec510194b6a8e7086a0fca9036d}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Controller\-Collection@{m\-Controller\-Collection}}
+\index{m\-Controller\-Collection@{m\-Controller\-Collection}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Controller\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf \-Base\-Controller}$\ast$$>$ {\bf \-Main\-Robot\-::m\-Controller\-Collection}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a7efe6ec510194b6a8e7086a0fca9036d}
+\hypertarget{class_main_robot_a26cd14099f6d1fa7a1688de50608ce84}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Elevator@{m\-Elevator}}
+\index{m\-Elevator@{m\-Elevator}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Elevator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Elevator}$\ast$ {\bf \-Main\-Robot\-::m\-Elevator}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a26cd14099f6d1fa7a1688de50608ce84}
+\hypertarget{class_main_robot_a1e38fd4d2d15887d10bf651eccb543f5}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Elevator\-Bottom\-Limit\-Switch@{m\-Elevator\-Bottom\-Limit\-Switch}}
+\index{m\-Elevator\-Bottom\-Limit\-Switch@{m\-Elevator\-Bottom\-Limit\-Switch}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Elevator\-Bottom\-Limit\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Main\-Robot\-::m\-Elevator\-Bottom\-Limit\-Switch}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a1e38fd4d2d15887d10bf651eccb543f5}
+\hypertarget{class_main_robot_a4eed75b4a0820bc454befbf958974732}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Elevator\-Speed\-Controller@{m\-Elevator\-Speed\-Controller}}
+\index{m\-Elevator\-Speed\-Controller@{m\-Elevator\-Speed\-Controller}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Elevator\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Elevator\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a4eed75b4a0820bc454befbf958974732}
+\hypertarget{class_main_robot_ae6176b12fcb13c89aa3693b073897b1a}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Elevator\-Top\-Limit\-Switch@{m\-Elevator\-Top\-Limit\-Switch}}
+\index{m\-Elevator\-Top\-Limit\-Switch@{m\-Elevator\-Top\-Limit\-Switch}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Elevator\-Top\-Limit\-Switch}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Main\-Robot\-::m\-Elevator\-Top\-Limit\-Switch}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ae6176b12fcb13c89aa3693b073897b1a}
+\hypertarget{class_main_robot_ad6e81885bc91b6a61320eef719e78b85}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Kinect@{m\-Kinect}}
+\index{m\-Kinect@{m\-Kinect}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Kinect}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect$\ast$ {\bf \-Main\-Robot\-::m\-Kinect}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ad6e81885bc91b6a61320eef719e78b85}
+\hypertarget{class_main_robot_aed74497f38a5fa85edbcbdbc62c7aa5d}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Left\-Back\-Drive@{m\-Left\-Back\-Drive}}
+\index{m\-Left\-Back\-Drive@{m\-Left\-Back\-Drive}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Left\-Back\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Left\-Back\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_aed74497f38a5fa85edbcbdbc62c7aa5d}
+\hypertarget{class_main_robot_aa4ebe10faab3310b89beab973c71495f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Left\-Front\-Drive@{m\-Left\-Front\-Drive}}
+\index{m\-Left\-Front\-Drive@{m\-Left\-Front\-Drive}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Left\-Front\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Left\-Front\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_aa4ebe10faab3310b89beab973c71495f}
+\hypertarget{class_main_robot_a7aba3a785cdb33afb26916c4ba1b977f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Left\-Joystick@{m\-Left\-Joystick}}
+\index{m\-Left\-Joystick@{m\-Left\-Joystick}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Left\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Main\-Robot\-::m\-Left\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a7aba3a785cdb33afb26916c4ba1b977f}
+\hypertarget{class_main_robot_aea5c68bbc133d2353f09a801b4a75b20}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Left\-Kinect\-Stick@{m\-Left\-Kinect\-Stick}}
+\index{m\-Left\-Kinect\-Stick@{m\-Left\-Kinect\-Stick}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Left\-Kinect\-Stick}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect\-Stick$\ast$ {\bf \-Main\-Robot\-::m\-Left\-Kinect\-Stick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_aea5c68bbc133d2353f09a801b4a75b20}
+\hypertarget{class_main_robot_a5f0eac828cc63df5ff95244cbc54933c}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Range\-Finder@{m\-Range\-Finder}}
+\index{m\-Range\-Finder@{m\-Range\-Finder}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Range\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Range\-Finder}$\ast$ {\bf \-Main\-Robot\-::m\-Range\-Finder}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a5f0eac828cc63df5ff95244cbc54933c}
+\hypertarget{class_main_robot_a1dbda505a92e08b53818aea4c1c14ff4}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Right\-Back\-Drive@{m\-Right\-Back\-Drive}}
+\index{m\-Right\-Back\-Drive@{m\-Right\-Back\-Drive}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Right\-Back\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Right\-Back\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a1dbda505a92e08b53818aea4c1c14ff4}
+\hypertarget{class_main_robot_a1bfc90c1733f991a56a311b1d76aa5c5}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Right\-Front\-Drive@{m\-Right\-Front\-Drive}}
+\index{m\-Right\-Front\-Drive@{m\-Right\-Front\-Drive}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Right\-Front\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Right\-Front\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a1bfc90c1733f991a56a311b1d76aa5c5}
+\hypertarget{class_main_robot_a11d16a0a8a5216cedb29cc2affe8657c}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Right\-Joystick@{m\-Right\-Joystick}}
+\index{m\-Right\-Joystick@{m\-Right\-Joystick}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Right\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Main\-Robot\-::m\-Right\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a11d16a0a8a5216cedb29cc2affe8657c}
+\hypertarget{class_main_robot_a46bf11190f370fc2dcff59000e9443f4}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Right\-Kinect\-Stick@{m\-Right\-Kinect\-Stick}}
+\index{m\-Right\-Kinect\-Stick@{m\-Right\-Kinect\-Stick}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Right\-Kinect\-Stick}]{\setlength{\rightskip}{0pt plus 5cm}\-Kinect\-Stick$\ast$ {\bf \-Main\-Robot\-::m\-Right\-Kinect\-Stick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a46bf11190f370fc2dcff59000e9443f4}
+\hypertarget{class_main_robot_af30bcbfefdc86125ee358df0070ffc6c}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Robot\-Drive@{m\-Robot\-Drive}}
+\index{m\-Robot\-Drive@{m\-Robot\-Drive}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Robot\-Drive}]{\setlength{\rightskip}{0pt plus 5cm}\-Robot\-Drive$\ast$ {\bf \-Main\-Robot\-::m\-Robot\-Drive}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_af30bcbfefdc86125ee358df0070ffc6c}
+\hypertarget{class_main_robot_ae1a1727a4b2441215d9c756100dea0d9}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Shooter@{m\-Shooter}}
+\index{m\-Shooter@{m\-Shooter}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Shooter}$\ast$ {\bf \-Main\-Robot\-::m\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_ae1a1727a4b2441215d9c756100dea0d9}
+\hypertarget{class_main_robot_abe4f2b3d49a5eeae4ba4dd708c592b7e}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Target\-Finder@{m\-Target\-Finder}}
+\index{m\-Target\-Finder@{m\-Target\-Finder}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Target\-Finder}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Target\-Finder}$\ast$ {\bf \-Main\-Robot\-::m\-Target\-Finder}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_abe4f2b3d49a5eeae4ba4dd708c592b7e}
+\hypertarget{class_main_robot_afcd7a094aaf209800538edc2877e3da2}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Top\-Left\-Shooter@{m\-Top\-Left\-Shooter}}
+\index{m\-Top\-Left\-Shooter@{m\-Top\-Left\-Shooter}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Top\-Left\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Top\-Left\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_afcd7a094aaf209800538edc2877e3da2}
+\hypertarget{class_main_robot_add74215b836445c14c44d346eaab5fb8}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Top\-Limit@{m\-Top\-Limit}}
+\index{m\-Top\-Limit@{m\-Top\-Limit}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Top\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Main\-Robot\-::m\-Top\-Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_add74215b836445c14c44d346eaab5fb8}
+\hypertarget{class_main_robot_a809d62629624a0df2727b264b05f296c}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Top\-Right\-Shooter@{m\-Top\-Right\-Shooter}}
+\index{m\-Top\-Right\-Shooter@{m\-Top\-Right\-Shooter}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Top\-Right\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Main\-Robot\-::m\-Top\-Right\-Shooter}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a809d62629624a0df2727b264b05f296c}
+\hypertarget{class_main_robot_a93c7b0ef0ea295e83c2b5dc7f006516f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Twist\-Joystick@{m\-Twist\-Joystick}}
+\index{m\-Twist\-Joystick@{m\-Twist\-Joystick}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Twist\-Joystick}]{\setlength{\rightskip}{0pt plus 5cm}\-Joystick$\ast$ {\bf \-Main\-Robot\-::m\-Twist\-Joystick}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a93c7b0ef0ea295e83c2b5dc7f006516f}
+\hypertarget{class_main_robot_abf7ba8751a75e0b3d7157ac359ee45c0}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Ultrasound\-Sensor@{m\-Ultrasound\-Sensor}}
+\index{m\-Ultrasound\-Sensor@{m\-Ultrasound\-Sensor}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Ultrasound\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}\-Analog\-Channel$\ast$ {\bf \-Main\-Robot\-::m\-Ultrasound\-Sensor}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_abf7ba8751a75e0b3d7157ac359ee45c0}
+\hypertarget{class_main_robot_a097d8b9d4c41f1ddf0ea95522969d46f}{\index{\-Main\-Robot@{\-Main\-Robot}!m\-Xbox\-Controller@{m\-Xbox\-Controller}}
+\index{m\-Xbox\-Controller@{m\-Xbox\-Controller}!MainRobot@{\-Main\-Robot}}
+\subsubsection[{m\-Xbox\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Xbox\-Controller}$\ast$ {\bf \-Main\-Robot\-::m\-Xbox\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_main_robot_a097d8b9d4c41f1ddf0ea95522969d46f}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Profiles/\hyperlink{_main_robot_8h}{\-Main\-Robot.\-h}\item 
+\-Code/\-Profiles/\hyperlink{_main_robot_8cpp}{\-Main\-Robot.\-cpp}\end{DoxyCompactItemize}

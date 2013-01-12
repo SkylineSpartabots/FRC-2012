@@ -1,0 +1,168 @@
+\hypertarget{class_single_guarded_arm}{\section{\-Single\-Guarded\-Arm \-Class \-Reference}
+\label{class_single_guarded_arm}\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}}
+}
+
+
+{\ttfamily \#include $<$arm.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Single\-Guarded\-Arm\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_single_guarded_arm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Single\-Guarded\-Arm\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_single_guarded_arm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_single_guarded_arm_a8098cf7da4e174fac4b78209a0c0bc3c}{\-Single\-Guarded\-Arm} (\-Speed\-Controller $\ast$, \-Digital\-Input $\ast$)
+\item 
+\hyperlink{class_single_guarded_arm_ab16452596112f0eeb85922fcdc45fb8d}{$\sim$\-Single\-Guarded\-Arm} ()
+\begin{DoxyCompactList}\small\item\em \-Deconstructor for the arm class. \end{DoxyCompactList}\item 
+void \hyperlink{class_single_guarded_arm_aaa7b3de4ab81cca483af88886302ca07}{\-Go\-Up} ()
+\begin{DoxyCompactList}\small\item\em \-Makes the arm go up. \end{DoxyCompactList}\item 
+void \hyperlink{class_single_guarded_arm_aef02c8ff20f127caaf8dcb8e5f45a21c}{\-Go\-Down} ()
+\begin{DoxyCompactList}\small\item\em \-Makes the arm go down. \end{DoxyCompactList}\item 
+void \hyperlink{class_single_guarded_arm_ae9ac38ab7f932c04dc8753dd9fd6e460}{\-Stop} ()
+\begin{DoxyCompactList}\small\item\em \-Makes the arm stop. \end{DoxyCompactList}\item 
+void \hyperlink{class_single_guarded_arm_a341049a51ada6d13faf08a43c476d4d1}{\-Set} (float)
+\item 
+void \hyperlink{class_single_guarded_arm_a0e558d1874861458b8cc9354eebb620b}{\-Safe\-Set} (float)
+\begin{DoxyCompactList}\small\item\em \-Safely sets the arm speed controller to a value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Static \-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_single_guarded_arm_aa442ed29c8e99b475a4f46ecac051544}{k\-Up\-Motor\-Speed} = 1
+\item 
+static const float \hyperlink{class_single_guarded_arm_a8ea1ee43ded38095030020bb546dc62e}{k\-Down\-Motor\-Speed} = -\/1
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Digital\-Input $\ast$ \hyperlink{class_single_guarded_arm_ad5da5518b0a0907955331bfec305478f}{m\-Limit}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_single_guarded_arm_a8098cf7da4e174fac4b78209a0c0bc3c}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}}
+\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Single\-Guarded\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Single\-Guarded\-Arm\-::\-Single\-Guarded\-Arm} (
+\begin{DoxyParamCaption}
+\item[{\-Speed\-Controller $\ast$}]{speed\-Controller, }
+\item[{\-Digital\-Input $\ast$}]{limit}
+\end{DoxyParamCaption}
+)}}\label{class_single_guarded_arm_a8098cf7da4e174fac4b78209a0c0bc3c}
+\hypertarget{class_single_guarded_arm_ab16452596112f0eeb85922fcdc45fb8d}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!$\sim$\-Single\-Guarded\-Arm@{$\sim$\-Single\-Guarded\-Arm}}
+\index{$\sim$\-Single\-Guarded\-Arm@{$\sim$\-Single\-Guarded\-Arm}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{$\sim$\-Single\-Guarded\-Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Single\-Guarded\-Arm\-::$\sim$\-Single\-Guarded\-Arm} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_single_guarded_arm_ab16452596112f0eeb85922fcdc45fb8d}
+
+
+\-Deconstructor for the arm class. 
+
+\-Used to kill the motor watchdog. 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_single_guarded_arm_aef02c8ff20f127caaf8dcb8e5f45a21c}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Go\-Down@{\-Go\-Down}}
+\index{\-Go\-Down@{\-Go\-Down}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Go\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Single\-Guarded\-Arm\-::\-Go\-Down} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_single_guarded_arm_aef02c8ff20f127caaf8dcb8e5f45a21c}
+
+
+\-Makes the arm go down. 
+
+\-If the bottom limit switch is pressed, then the arms stop going down. \-In other words, when the arm is at minimum height, it stops automatically. 
+
+\-Implements \hyperlink{class_base_arm_component_a210553246d376118840fc734e78f8a14}{\-Base\-Arm\-Component}.
+
+\hypertarget{class_single_guarded_arm_aaa7b3de4ab81cca483af88886302ca07}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Go\-Up@{\-Go\-Up}}
+\index{\-Go\-Up@{\-Go\-Up}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Go\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Single\-Guarded\-Arm\-::\-Go\-Up} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_single_guarded_arm_aaa7b3de4ab81cca483af88886302ca07}
+
+
+\-Makes the arm go up. 
+
+\-If the top limit switch is pressed, then the arm stops going up. \-In other words, when the arm is at maximum height, it stops automatically. 
+
+\-Implements \hyperlink{class_base_arm_component_a6c3cd421080031cf62b2f7f4e3ee5bc4}{\-Base\-Arm\-Component}.
+
+\hypertarget{class_single_guarded_arm_a0e558d1874861458b8cc9354eebb620b}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Safe\-Set@{\-Safe\-Set}}
+\index{\-Safe\-Set@{\-Safe\-Set}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Safe\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Single\-Guarded\-Arm\-::\-Safe\-Set} (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_single_guarded_arm_a0e558d1874861458b8cc9354eebb620b}
+
+
+\-Safely sets the arm speed controller to a value. 
+
+
+
+\-Implements \hyperlink{class_base_motor_arm_component_a610812468e127706b11aabc97155c4c0}{\-Base\-Motor\-Arm\-Component}.
+
+\hypertarget{class_single_guarded_arm_a341049a51ada6d13faf08a43c476d4d1}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Set@{\-Set}}
+\index{\-Set@{\-Set}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Single\-Guarded\-Arm\-::\-Set} (
+\begin{DoxyParamCaption}
+\item[{float}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_single_guarded_arm_a341049a51ada6d13faf08a43c476d4d1}
+
+
+\-Implements \hyperlink{class_base_motor_arm_component_af2ad1b40c5e0e55a694bb19cfe98c691}{\-Base\-Motor\-Arm\-Component}.
+
+\hypertarget{class_single_guarded_arm_ae9ac38ab7f932c04dc8753dd9fd6e460}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Single\-Guarded\-Arm\-::\-Stop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_single_guarded_arm_ae9ac38ab7f932c04dc8753dd9fd6e460}
+
+
+\-Makes the arm stop. 
+
+
+
+\-Implements \hyperlink{class_base_arm_component_abfb9d7005b18704f76b7cde4296dcca0}{\-Base\-Arm\-Component}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_single_guarded_arm_a8ea1ee43ded38095030020bb546dc62e}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!k\-Down\-Motor\-Speed@{k\-Down\-Motor\-Speed}}
+\index{k\-Down\-Motor\-Speed@{k\-Down\-Motor\-Speed}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{k\-Down\-Motor\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Single\-Guarded\-Arm\-::k\-Down\-Motor\-Speed} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_single_guarded_arm_a8ea1ee43ded38095030020bb546dc62e}
+\hypertarget{class_single_guarded_arm_aa442ed29c8e99b475a4f46ecac051544}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!k\-Up\-Motor\-Speed@{k\-Up\-Motor\-Speed}}
+\index{k\-Up\-Motor\-Speed@{k\-Up\-Motor\-Speed}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{k\-Up\-Motor\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Single\-Guarded\-Arm\-::k\-Up\-Motor\-Speed} = 1\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_single_guarded_arm_aa442ed29c8e99b475a4f46ecac051544}
+\hypertarget{class_single_guarded_arm_ad5da5518b0a0907955331bfec305478f}{\index{\-Single\-Guarded\-Arm@{\-Single\-Guarded\-Arm}!m\-Limit@{m\-Limit}}
+\index{m\-Limit@{m\-Limit}!SingleGuardedArm@{\-Single\-Guarded\-Arm}}
+\subsubsection[{m\-Limit}]{\setlength{\rightskip}{0pt plus 5cm}\-Digital\-Input$\ast$ {\bf \-Single\-Guarded\-Arm\-::m\-Limit}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_single_guarded_arm_ad5da5518b0a0907955331bfec305478f}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{arm_8h}{arm.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{arm_8cpp}{arm.\-cpp}\end{DoxyCompactItemize}

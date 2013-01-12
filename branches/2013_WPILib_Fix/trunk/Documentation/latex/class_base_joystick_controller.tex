@@ -1,0 +1,173 @@
+\hypertarget{class_base_joystick_controller}{\section{\-Base\-Joystick\-Controller \-Class \-Reference}
+\label{class_base_joystick_controller}\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}}
+}
+
+
+\-A baseclass for any controller that uses a joystick.  
+
+
+
+
+{\ttfamily \#include $<$driving.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Base\-Joystick\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_joystick_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Base\-Joystick\-Controller\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{class_base_joystick_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_joystick_controller_a47fca3d26986a9ae18f9748be8fdf5da}{\-Base\-Joystick\-Controller} ()
+\begin{DoxyCompactList}\small\item\em \-An empty constructor -\/-\/ currently does nothing. \end{DoxyCompactList}\item 
+void \hyperlink{class_base_joystick_controller_a0c7c65553c0bbd68fff1fdc69c00aa77}{\-Stop} (\-Robot\-Drive $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Stops the robot. \end{DoxyCompactList}\item 
+void \hyperlink{class_base_joystick_controller_a8da5328dc760aa08edade5adb793d0c4}{\-Run} ()=0
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{class_base_joystick_controller_aabe47242ff9d1c8ce3e5c85892f118c9}{\-Get\-Speed\-Factor} (\-Joystick $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Gets the magnitude of the robot based on the throttle. \end{DoxyCompactList}\item 
+float \hyperlink{class_base_joystick_controller_afdf35242ad43223a083e232fa9d1ac2a}{\-Truncate} (float)
+\begin{DoxyCompactList}\small\item\em \-A datastructure holding the speeds of the left and right wheels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_base_joystick_controller_a57b2686f5181fc4af7df37dd847d59fb}{m\-Are\-Values\-Swapped}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_base_joystick_controller_ae6950f7339ee1bc18437c6d1d364517f}{k\-Speed\-Factor\-Min} = 0.\-3
+\item 
+static const float \hyperlink{class_base_joystick_controller_ac6514f3d3abc38719f47e5e07ea61f0a}{k\-Speed\-Factor\-Max} = 1.\-0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A baseclass for any controller that uses a joystick. 
+
+\-Implements some common functions. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_base_joystick_controller_a47fca3d26986a9ae18f9748be8fdf5da}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}}
+\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{\-Base\-Joystick\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Joystick\-Controller\-::\-Base\-Joystick\-Controller} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_base_joystick_controller_a47fca3d26986a9ae18f9748be8fdf5da}
+
+
+\-An empty constructor -\/-\/ currently does nothing. 
+
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_base_joystick_controller_aabe47242ff9d1c8ce3e5c85892f118c9}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!\-Get\-Speed\-Factor@{\-Get\-Speed\-Factor}}
+\index{\-Get\-Speed\-Factor@{\-Get\-Speed\-Factor}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{\-Get\-Speed\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Base\-Joystick\-Controller\-::\-Get\-Speed\-Factor} (
+\begin{DoxyParamCaption}
+\item[{\-Joystick $\ast$}]{joystick}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_base_joystick_controller_aabe47242ff9d1c8ce3e5c85892f118c9}
+
+
+\-Gets the magnitude of the robot based on the throttle. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em joystick} & \-A pointer to the joystick to get the throttle value from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+\-A number between \hyperlink{class_base_joystick_controller_ae6950f7339ee1bc18437c6d1d364517f}{\-Base\-Joystick\-Controller\-::k\-Speed\-Factor\-Min} \hyperlink{class_base_joystick_controller_ac6514f3d3abc38719f47e5e07ea61f0a}{\-Base\-Joystick\-Controller\-::k\-Speed\-Factor\-Max}. 
+\end{DoxyReturn}
+
+
+\-Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_joystick_controller_aabe47242ff9d1c8ce3e5c85892f118c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_base_joystick_controller_a8da5328dc760aa08edade5adb793d0c4}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!\-Run@{\-Run}}
+\index{\-Run@{\-Run}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{\-Run}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Base\-Joystick\-Controller\-::\-Run} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_base_joystick_controller_a8da5328dc760aa08edade5adb793d0c4}
+
+
+\-Implements \hyperlink{class_base_controller_a2c73f08fa403e1a4912ce4aaa348ac61}{\-Base\-Controller}.
+
+
+
+\-Implemented in \hyperlink{class_safety_mode_a32ccfc9c47d36efd1edc17ce856f1c22}{\-Safety\-Mode}, \hyperlink{class_single_joystick_a2b07f288539f8be14c1ac58ac115fcbf}{\-Single\-Joystick}, \hyperlink{class_tank_joysticks_a77b5b392042169bb9cf2f67400870fb8}{\-Tank\-Joysticks}, \hyperlink{class_test_motor_a6e754aea6e9feb2b0d0326f9466c9eba}{\-Test\-Motor}, and \hyperlink{class_arcade_joystick_a58b33ec57356a99245409e9f4c2e7fdd}{\-Arcade\-Joystick}.
+
+\hypertarget{class_base_joystick_controller_a0c7c65553c0bbd68fff1fdc69c00aa77}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!\-Stop@{\-Stop}}
+\index{\-Stop@{\-Stop}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Base\-Joystick\-Controller\-::\-Stop} (
+\begin{DoxyParamCaption}
+\item[{\-Robot\-Drive $\ast$}]{robot\-Drive}
+\end{DoxyParamCaption}
+)}}\label{class_base_joystick_controller_a0c7c65553c0bbd68fff1fdc69c00aa77}
+
+
+\-Stops the robot. 
+
+\hypertarget{class_base_joystick_controller_afdf35242ad43223a083e232fa9d1ac2a}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!\-Truncate@{\-Truncate}}
+\index{\-Truncate@{\-Truncate}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{\-Truncate}]{\setlength{\rightskip}{0pt plus 5cm}float {\bf \-Base\-Joystick\-Controller\-::\-Truncate} (
+\begin{DoxyParamCaption}
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_base_joystick_controller_afdf35242ad43223a083e232fa9d1ac2a}
+
+
+\-A datastructure holding the speeds of the left and right wheels. 
+
+\-This struct was constructed mostly for organizational processes, to facilitate passing around code. 
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_base_joystick_controller_ac6514f3d3abc38719f47e5e07ea61f0a}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!k\-Speed\-Factor\-Max@{k\-Speed\-Factor\-Max}}
+\index{k\-Speed\-Factor\-Max@{k\-Speed\-Factor\-Max}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{k\-Speed\-Factor\-Max}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Base\-Joystick\-Controller\-::k\-Speed\-Factor\-Max} = 1.\-0\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base_joystick_controller_ac6514f3d3abc38719f47e5e07ea61f0a}
+
+
+\-Reimplemented in \hyperlink{class_tank_joysticks_accc26be7603ec654301c9067920a070d}{\-Tank\-Joysticks}.
+
+\hypertarget{class_base_joystick_controller_ae6950f7339ee1bc18437c6d1d364517f}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!k\-Speed\-Factor\-Min@{k\-Speed\-Factor\-Min}}
+\index{k\-Speed\-Factor\-Min@{k\-Speed\-Factor\-Min}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{k\-Speed\-Factor\-Min}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Base\-Joystick\-Controller\-::k\-Speed\-Factor\-Min} = 0.\-3\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base_joystick_controller_ae6950f7339ee1bc18437c6d1d364517f}
+
+
+\-Reimplemented in \hyperlink{class_tank_joysticks_abdba3d773862b977177d157a99d48196}{\-Tank\-Joysticks}.
+
+\hypertarget{class_base_joystick_controller_a57b2686f5181fc4af7df37dd847d59fb}{\index{\-Base\-Joystick\-Controller@{\-Base\-Joystick\-Controller}!m\-Are\-Values\-Swapped@{m\-Are\-Values\-Swapped}}
+\index{m\-Are\-Values\-Swapped@{m\-Are\-Values\-Swapped}!BaseJoystickController@{\-Base\-Joystick\-Controller}}
+\subsubsection[{m\-Are\-Values\-Swapped}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Base\-Joystick\-Controller\-::m\-Are\-Values\-Swapped}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_base_joystick_controller_a57b2686f5181fc4af7df37dd847d59fb}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{driving_8h}{driving.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{driving_8cpp}{driving.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,11 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$filter_8cpp.html#a067ac671b29930d96b5f7288dccf73eb" title="ReverseDirection" alt="" coords="186,5,305,32"/>
+<area shape="rect" id="node5" href="$filter_8cpp.html#a52499c4f05b5197ba7382b76625ec102" title="Squares the input of both sides to allow more sensitive driving when the joystick is pushed less..." alt="" coords="200,56,291,83"/>
+<area shape="rect" id="node7" href="$filter_8cpp.html#ae1c64daeb5fe00f1b53b393a5ae6c0d0" title="AddSpeedFactor" alt="" coords="186,107,305,133"/>
+<area shape="rect" id="node9" href="$class_base_joystick_controller.html#aabe47242ff9d1c8ce3e5c85892f118c9" title="Gets the magnitude of the robot based on the throttle." alt="" coords="363,183,621,209"/>
+<area shape="rect" id="node13" href="$filter_8cpp.html#a55899ef3e1597e86fe39df999d66f816" title="Straighten" alt="" coords="205,208,286,235"/>
+<area shape="rect" id="node15" href="$namespace_tools.html#a2b0885705a90e217a3a21e785086a22b" title="Tools::StringToFloat" alt="" coords="176,259,315,285"/>
+<area shape="rect" id="node17" href="$filter_8cpp.html#a7294595a14b9434ad5bf45fc022f77a3" title="AddTruncation" alt="" coords="193,309,298,336"/>
+<area shape="rect" id="node11" href="$namespace_tools.html#a7f4eaf8719ea333f45be6f9cda129692" title="Takes a number between a certain range and scales it within another range." alt="" coords="670,221,773,248"/>
+<area shape="rect" id="node19" href="$namespace_filter.html#a1820f44adabb671ddadacbd5e6314f31" title="Filter::truncate" alt="" coords="439,259,545,285"/>
+</map>

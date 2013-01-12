@@ -1,0 +1,161 @@
+\hypertarget{class_shooter}{\section{\-Shooter \-Class \-Reference}
+\label{class_shooter}\index{\-Shooter@{\-Shooter}}
+}
+
+
+\-Controls the shooter.  
+
+
+
+
+{\ttfamily \#include $<$shooter.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Shooter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_shooter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Shooter\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=168pt]{class_shooter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shooter_a529a6d247130ef0b3016f74faf402e2d}{\-Shooter} (\-Speed\-Controller $\ast$, \-Speed\-Controller $\ast$, \-Speed\-Controller $\ast$, \-Speed\-Controller $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Creates an instance of this class. \end{DoxyCompactList}\item 
+void \hyperlink{class_shooter_a05fdd64fa0a3eaca039a36269c47fe7c}{\-Set\-Speed} (float)
+\begin{DoxyCompactList}\small\item\em \-Makes the wheels spin at a certain speed, typically set during manual mode. \end{DoxyCompactList}\item 
+void \hyperlink{class_shooter_ad2585dcdf4594f7ca7582a6c94699e67}{\-Set\-Speed} (float, float)
+\begin{DoxyCompactList}\small\item\em \-Lets you calibrate exactly how much the top and bottom wheels spin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_shooter_a88b8889b38ca1b0da9d49da67305a8d0}{m\-Top\-Left\-Speed\-Controller}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_shooter_a2fbf3fc001d31b3c360624b36894c47d}{m\-Top\-Right\-Speed\-Controller}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_shooter_a3df532a45e73b964c026ab634764bd91}{m\-Bottom\-Left\-Speed\-Controller}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_shooter_aa41cfaf5fcf23f80ea777ad594b1bd86}{m\-Bottom\-Right\-Speed\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_shooter_a744bf16013f80de1e0c60136b4b51139}{k\-Reduction\-Factor} = 0.\-9
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Controls the shooter. 
+
+\begin{DoxyWarning}{\-Warning}
+\-This class, structurally speaking, is too complex. \-In addition, anything related to automatically shooting is either untested or buggy. 
+\end{DoxyWarning}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_shooter_a529a6d247130ef0b3016f74faf402e2d}{\index{\-Shooter@{\-Shooter}!\-Shooter@{\-Shooter}}
+\index{\-Shooter@{\-Shooter}!Shooter@{\-Shooter}}
+\subsubsection[{\-Shooter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Shooter\-::\-Shooter} (
+\begin{DoxyParamCaption}
+\item[{\-Speed\-Controller $\ast$}]{top\-Left\-Speed\-Controller, }
+\item[{\-Speed\-Controller $\ast$}]{top\-Right\-Speed\-Controller, }
+\item[{\-Speed\-Controller $\ast$}]{bottom\-Left\-Speed\-Controller, }
+\item[{\-Speed\-Controller $\ast$}]{bottom\-Right\-Speed\-Controller}
+\end{DoxyParamCaption}
+)}}\label{class_shooter_a529a6d247130ef0b3016f74faf402e2d}
+
+
+\-Creates an instance of this class. 
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em top\-Left\-Speed\-Controller} & \-Pointer to the top left speed controller. \\
+\hline
+\mbox{\tt in}  & {\em top\-Right\-Speed\-Controller} & \-Pointer to the top right speed controller. \\
+\hline
+\mbox{\tt in}  & {\em bottom\-Left\-Speed\-Controller} & \-Pointer to the bottom left speed controller. \\
+\hline
+\mbox{\tt in}  & {\em bottom\-Right\-Speed\-Controller} & \-Pointer to the bottom right speed controller. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_shooter_a05fdd64fa0a3eaca039a36269c47fe7c}{\index{\-Shooter@{\-Shooter}!\-Set\-Speed@{\-Set\-Speed}}
+\index{\-Set\-Speed@{\-Set\-Speed}!Shooter@{\-Shooter}}
+\subsubsection[{\-Set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Shooter\-::\-Set\-Speed} (
+\begin{DoxyParamCaption}
+\item[{float}]{speed}
+\end{DoxyParamCaption}
+)}}\label{class_shooter_a05fdd64fa0a3eaca039a36269c47fe7c}
+
+
+\-Makes the wheels spin at a certain speed, typically set during manual mode. 
+
+\-The input should be in the range -\/1.\-0 to 1.\-0.
+
+\begin{DoxyRefDesc}{\-Todo}
+\item[\hyperlink{todo__todo000005}{\-Todo}]\-Investigate if the motor requires a positive or negative speed to spin in the correct direction to shoot.\end{DoxyRefDesc}
+
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em speed} & \-The speed of the motor (from -\/1.\-0 to 1.\-0). \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_shooter_ad2585dcdf4594f7ca7582a6c94699e67}{\index{\-Shooter@{\-Shooter}!\-Set\-Speed@{\-Set\-Speed}}
+\index{\-Set\-Speed@{\-Set\-Speed}!Shooter@{\-Shooter}}
+\subsubsection[{\-Set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Shooter\-::\-Set\-Speed} (
+\begin{DoxyParamCaption}
+\item[{float}]{top\-Speed, }
+\item[{float}]{bottom\-Speed}
+\end{DoxyParamCaption}
+)}}\label{class_shooter_ad2585dcdf4594f7ca7582a6c94699e67}
+
+
+\-Lets you calibrate exactly how much the top and bottom wheels spin. 
+
+\-The inputs should be the the range -\/1.\-0 to 1.\-0
+
+
+\begin{DoxyParams}[1]{\-Parameters}
+\mbox{\tt in}  & {\em top\-Speed} & \-The speed of the top pair of motors \\
+\hline
+\mbox{\tt out}  & {\em bottom\-Speed} & \-The speed of the bottom pair of motors \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_shooter_a744bf16013f80de1e0c60136b4b51139}{\index{\-Shooter@{\-Shooter}!k\-Reduction\-Factor@{k\-Reduction\-Factor}}
+\index{k\-Reduction\-Factor@{k\-Reduction\-Factor}!Shooter@{\-Shooter}}
+\subsubsection[{k\-Reduction\-Factor}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Shooter\-::k\-Reduction\-Factor} = 0.\-9\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_shooter_a744bf16013f80de1e0c60136b4b51139}
+\hypertarget{class_shooter_a3df532a45e73b964c026ab634764bd91}{\index{\-Shooter@{\-Shooter}!m\-Bottom\-Left\-Speed\-Controller@{m\-Bottom\-Left\-Speed\-Controller}}
+\index{m\-Bottom\-Left\-Speed\-Controller@{m\-Bottom\-Left\-Speed\-Controller}!Shooter@{\-Shooter}}
+\subsubsection[{m\-Bottom\-Left\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Shooter\-::m\-Bottom\-Left\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_a3df532a45e73b964c026ab634764bd91}
+\hypertarget{class_shooter_aa41cfaf5fcf23f80ea777ad594b1bd86}{\index{\-Shooter@{\-Shooter}!m\-Bottom\-Right\-Speed\-Controller@{m\-Bottom\-Right\-Speed\-Controller}}
+\index{m\-Bottom\-Right\-Speed\-Controller@{m\-Bottom\-Right\-Speed\-Controller}!Shooter@{\-Shooter}}
+\subsubsection[{m\-Bottom\-Right\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Shooter\-::m\-Bottom\-Right\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_aa41cfaf5fcf23f80ea777ad594b1bd86}
+\hypertarget{class_shooter_a88b8889b38ca1b0da9d49da67305a8d0}{\index{\-Shooter@{\-Shooter}!m\-Top\-Left\-Speed\-Controller@{m\-Top\-Left\-Speed\-Controller}}
+\index{m\-Top\-Left\-Speed\-Controller@{m\-Top\-Left\-Speed\-Controller}!Shooter@{\-Shooter}}
+\subsubsection[{m\-Top\-Left\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Shooter\-::m\-Top\-Left\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_a88b8889b38ca1b0da9d49da67305a8d0}
+\hypertarget{class_shooter_a2fbf3fc001d31b3c360624b36894c47d}{\index{\-Shooter@{\-Shooter}!m\-Top\-Right\-Speed\-Controller@{m\-Top\-Right\-Speed\-Controller}}
+\index{m\-Top\-Right\-Speed\-Controller@{m\-Top\-Right\-Speed\-Controller}!Shooter@{\-Shooter}}
+\subsubsection[{m\-Top\-Right\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Shooter\-::m\-Top\-Right\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_shooter_a2fbf3fc001d31b3c360624b36894c47d}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{shooter_8h}{shooter.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{shooter_8cpp}{shooter.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{driving_8h}{\section{\-Code/\-Subsystems/driving.h \-File \-Reference}
+\label{driving_8h}\index{\-Code/\-Subsystems/driving.\-h@{\-Code/\-Subsystems/driving.\-h}}
+}
+
+
+\-Contains the code used to drive the robot based on user input.  
+
+
+{\ttfamily \#include \char`\"{}\-W\-P\-I\-Lib.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Definitions/components.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}shooter.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}arm.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../\-Client/xbox.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}filters.\-h\char`\"{}}\*
+\-Include dependency graph for driving.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{driving_8h__incl}
+\end{center}
+\end{figure}
+\-This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{driving_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_base_joystick_controller}{\-Base\-Joystick\-Controller}
+\begin{DoxyCompactList}\small\item\em \-A baseclass for any controller that uses a joystick. \end{DoxyCompactList}\item 
+class \hyperlink{class_arcade_joystick}{\-Arcade\-Joystick}
+\item 
+class \hyperlink{class_controller_switcher}{\-Controller\-Switcher}
+\begin{DoxyCompactList}\small\item\em \-A container class to hold a series of controllers to allow a user to switch between them via the smart dashboard. \end{DoxyCompactList}\item 
+class \hyperlink{class_test_motor}{\-Test\-Motor}
+\begin{DoxyCompactList}\small\item\em \-Tests a motor using a joystick. \end{DoxyCompactList}\item 
+class \hyperlink{class_minimalist_drive}{\-Minimalist\-Drive}
+\begin{DoxyCompactList}\small\item\em \-A driving system designed to keep the robot from moving without the watchdogs complaining there's no signal being sent to the drive system. \end{DoxyCompactList}\item 
+class \hyperlink{class_tank_joysticks}{\-Tank\-Joysticks}
+\begin{DoxyCompactList}\small\item\em \-Takes two joysticks and drives the robot, tank-\/style. \end{DoxyCompactList}\item 
+class \hyperlink{class_single_joystick}{\-Single\-Joystick}
+\begin{DoxyCompactList}\small\item\em \-Takes a single joystick and drives the robot, arcade style. \end{DoxyCompactList}\item 
+class \hyperlink{class_safety_mode}{\-Safety\-Mode}
+\begin{DoxyCompactList}\small\item\em \-A mode of controlling the robot (tank drive) but specifically calibrated to be safer and for demonstration purposes. \end{DoxyCompactList}\item 
+class \hyperlink{class_base_kinect_controller}{\-Base\-Kinect\-Controller}
+\begin{DoxyCompactList}\small\item\em \-A base class for any controller using a \-Kinect. \end{DoxyCompactList}\item 
+class \hyperlink{class_kinect_controller}{\-Kinect\-Controller}
+\begin{DoxyCompactList}\small\item\em \-Takes a \-Kinect and uses hand gestures to drive the robot. \end{DoxyCompactList}\item 
+class \hyperlink{class_kinect_angle_controller}{\-Kinect\-Angle\-Controller}
+\begin{DoxyCompactList}\small\item\em \-Uses a kinect to drive the robot -\/-\/ this time, based on the angle of the hands to the shoulders. \end{DoxyCompactList}\item 
+class \hyperlink{class_xbox_drive}{\-Xbox\-Drive}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Contains the code used to drive the robot based on user input. \-Code for shooting the robot or manipulating the elevator is kept seperately
+
+\-Every class in here should have '\hyperlink{class_base_controller}{\-Base\-Controller}' as their parent class, so they can be placed under \-My\-Robot\-::m\-Component\-Collection. 

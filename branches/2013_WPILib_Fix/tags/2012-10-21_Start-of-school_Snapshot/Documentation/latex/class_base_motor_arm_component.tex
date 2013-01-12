@@ -1,0 +1,128 @@
+\hypertarget{class_base_motor_arm_component}{\section{\-Base\-Motor\-Arm\-Component \-Class \-Reference}
+\label{class_base_motor_arm_component}\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}}
+}
+
+
+\-A base class to lower the arm using limit switches.  
+
+
+
+
+{\ttfamily \#include $<$arm.\-h$>$}
+
+
+
+\-Inheritance diagram for \-Base\-Motor\-Arm\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_base_motor_arm_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Collaboration diagram for \-Base\-Motor\-Arm\-Component\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_base_motor_arm_component__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_base_motor_arm_component_a4989002402011f28bb27a5d9dbe43529}{\-Base\-Motor\-Arm\-Component} (\-Speed\-Controller $\ast$)
+\begin{DoxyCompactList}\small\item\em \-Creates an instance of this class. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_base_motor_arm_component_a728e1d4d38f7607fc96fd7db241d15cd}{$\sim$\-Base\-Motor\-Arm\-Component} ()
+\item 
+virtual void \hyperlink{class_base_motor_arm_component_af2ad1b40c5e0e55a694bb19cfe98c691}{\-Set} (float)=0
+\item 
+virtual void \hyperlink{class_base_motor_arm_component_a610812468e127706b11aabc97155c4c0}{\-Safe\-Set} (float)=0
+\end{DoxyCompactItemize}
+\subsection*{\-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\-Speed\-Controller $\ast$ \hyperlink{class_base_motor_arm_component_ad928d86f5eb38d02f43a65e0491dcad8}{m\-Speed\-Controller}
+\end{DoxyCompactItemize}
+\subsection*{\-Static \-Protected \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const float \hyperlink{class_base_motor_arm_component_ad8633011d5b9b10ca813a8504f38e74c}{k\-Motor\-Speed} = 0.\-3
+\item 
+static const float \hyperlink{class_base_motor_arm_component_a93cac72cee3f552037027ab847372f12}{k\-Motor\-Direction} = 1.\-0
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-A base class to lower the arm using limit switches. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{class_base_motor_arm_component_a4989002402011f28bb27a5d9dbe43529}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}}
+\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{\-Base\-Motor\-Arm\-Component}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Motor\-Arm\-Component\-::\-Base\-Motor\-Arm\-Component} (
+\begin{DoxyParamCaption}
+\item[{\-Speed\-Controller $\ast$}]{speed\-Controller}
+\end{DoxyParamCaption}
+)}}\label{class_base_motor_arm_component_a4989002402011f28bb27a5d9dbe43529}
+
+
+\-Creates an instance of this class. 
+
+\hypertarget{class_base_motor_arm_component_a728e1d4d38f7607fc96fd7db241d15cd}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!$\sim$\-Base\-Motor\-Arm\-Component@{$\sim$\-Base\-Motor\-Arm\-Component}}
+\index{$\sim$\-Base\-Motor\-Arm\-Component@{$\sim$\-Base\-Motor\-Arm\-Component}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{$\sim$\-Base\-Motor\-Arm\-Component}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Base\-Motor\-Arm\-Component\-::$\sim$\-Base\-Motor\-Arm\-Component} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_base_motor_arm_component_a728e1d4d38f7607fc96fd7db241d15cd}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{class_base_motor_arm_component_a610812468e127706b11aabc97155c4c0}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!\-Safe\-Set@{\-Safe\-Set}}
+\index{\-Safe\-Set@{\-Safe\-Set}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{\-Safe\-Set}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-Base\-Motor\-Arm\-Component\-::\-Safe\-Set} (
+\begin{DoxyParamCaption}
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_base_motor_arm_component_a610812468e127706b11aabc97155c4c0}
+
+
+\-Implemented in \hyperlink{class_single_guarded_arm_a0e558d1874861458b8cc9354eebb620b}{\-Single\-Guarded\-Arm}, \hyperlink{class_guarded_arm_ac86e229ee92ee82ca6234047e5c2696b}{\-Guarded\-Arm}, and \hyperlink{class_simple_arm_a71434f7cfcaf0451ffff5283a6f4d38c}{\-Simple\-Arm}.
+
+\hypertarget{class_base_motor_arm_component_af2ad1b40c5e0e55a694bb19cfe98c691}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!\-Set@{\-Set}}
+\index{\-Set@{\-Set}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{\-Set}]{\setlength{\rightskip}{0pt plus 5cm}virtual void {\bf \-Base\-Motor\-Arm\-Component\-::\-Set} (
+\begin{DoxyParamCaption}
+\item[{float}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}\label{class_base_motor_arm_component_af2ad1b40c5e0e55a694bb19cfe98c691}
+
+
+\-Implemented in \hyperlink{class_single_guarded_arm_a341049a51ada6d13faf08a43c476d4d1}{\-Single\-Guarded\-Arm}, \hyperlink{class_guarded_arm_af9bf7d089d843f1804c7e75c915c74d8}{\-Guarded\-Arm}, and \hyperlink{class_simple_arm_a99217123ae487fc86d4d2400b73c8b2f}{\-Simple\-Arm}.
+
+
+
+\subsection{\-Member \-Data \-Documentation}
+\hypertarget{class_base_motor_arm_component_a93cac72cee3f552037027ab847372f12}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!k\-Motor\-Direction@{k\-Motor\-Direction}}
+\index{k\-Motor\-Direction@{k\-Motor\-Direction}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{k\-Motor\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Base\-Motor\-Arm\-Component\-::k\-Motor\-Direction} = 1.\-0\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base_motor_arm_component_a93cac72cee3f552037027ab847372f12}
+
+
+\-Reimplemented in \hyperlink{class_guarded_arm_a36ce84955e289c08c4eb791d3362b568}{\-Guarded\-Arm}.
+
+\hypertarget{class_base_motor_arm_component_ad8633011d5b9b10ca813a8504f38e74c}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!k\-Motor\-Speed@{k\-Motor\-Speed}}
+\index{k\-Motor\-Speed@{k\-Motor\-Speed}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{k\-Motor\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}const float {\bf \-Base\-Motor\-Arm\-Component\-::k\-Motor\-Speed} = 0.\-3\hspace{0.3cm}{\ttfamily  \mbox{[}static, protected\mbox{]}}}}\label{class_base_motor_arm_component_ad8633011d5b9b10ca813a8504f38e74c}
+
+
+\-Reimplemented in \hyperlink{class_guarded_arm_a4dd9a387e839ed3a965c721c9910b2da}{\-Guarded\-Arm}.
+
+\hypertarget{class_base_motor_arm_component_ad928d86f5eb38d02f43a65e0491dcad8}{\index{\-Base\-Motor\-Arm\-Component@{\-Base\-Motor\-Arm\-Component}!m\-Speed\-Controller@{m\-Speed\-Controller}}
+\index{m\-Speed\-Controller@{m\-Speed\-Controller}!BaseMotorArmComponent@{\-Base\-Motor\-Arm\-Component}}
+\subsubsection[{m\-Speed\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}\-Speed\-Controller$\ast$ {\bf \-Base\-Motor\-Arm\-Component\-::m\-Speed\-Controller}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_base_motor_arm_component_ad928d86f5eb38d02f43a65e0491dcad8}
+
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\-Code/\-Subsystems/\hyperlink{arm_8h}{arm.\-h}\item 
+\-Code/\-Subsystems/\hyperlink{arm_8cpp}{arm.\-cpp}\end{DoxyCompactItemize}

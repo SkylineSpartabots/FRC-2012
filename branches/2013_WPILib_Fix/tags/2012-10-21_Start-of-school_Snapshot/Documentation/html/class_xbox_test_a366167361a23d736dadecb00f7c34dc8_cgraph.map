@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_xbox_controller.html#a9a7065dde4023b343649f4a05792f2a0" title="XboxController::GetAxis" alt="" coords="167,5,327,32"/>
+<area shape="rect" id="node5" href="$class_xbox_controller.html#a8c03925e5cd3b017e8561c951c3c34bb" title="XboxController::GetDpad" alt="" coords="165,56,329,83"/>
+<area shape="rect" id="node7" href="$class_xbox_controller.html#a7e7d2cc4101c30502c28f54796c90968" title="XboxController::GetButton" alt="" coords="161,107,333,133"/>
+</map>
